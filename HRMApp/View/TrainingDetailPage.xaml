@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HRMApp.View.TrainingDetailPage"
+             Title="{Binding Course.Name}">
+
+    <ContentPage.Resources>
+    </ContentPage.Resources>
+
+    <Grid RowDefinitions="Auto, *, Auto">
+
+        <Frame Grid.Row="0" IsVisible="{Binding IsReviewMode}" BackgroundColor="#E0F7FA" Margin="10">
+            <Label Text="{Binding ScoreSummary}" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="#006064"/>
+        </Frame>
+
+        <CollectionView Grid.Row="1" ItemsSource="{Binding Questions}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Margin="10" Padding="15" BackgroundColor="{Binding ResultColor}" BorderColor="Gray">
+                        <VerticalStackLayout Spacing="10">
+                            <Label Text="{Binding Dto.Content}" FontAttributes="Bold" FontSize="16"/>
+
+                            <RadioButton Content="{Binding Dto.A, StringFormat='A. {0}'}" 
+                                         GroupName="{Binding Dto.Id}"
+                                         IsChecked="{Binding IsAnswerA, Mode=TwoWay}"
+                                         IsEnabled="{Binding IsReadOnly, Converter={StaticResource InvertBoolConverter}}"/>
+
+                            <RadioButton Content="{Binding Dto.B, StringFormat='B. {0}'}" 
+                                         GroupName="{Binding Dto.Id}"
+                                         IsChecked="{Binding IsAnswerB, Mode=TwoWay}"
+                                         IsEnabled="{Binding IsReadOnly, Converter={StaticResource InvertBoolConverter}}"/>
+
+                            <RadioButton Content="{Binding Dto.C, StringFormat='C. {0}'}" 
+                                         GroupName="{Binding Dto.Id}"
+                                         IsChecked="{Binding IsAnswerC, Mode=TwoWay}"
+                                         IsEnabled="{Binding IsReadOnly, Converter={StaticResource InvertBoolConverter}}"/>
+
+                            <RadioButton Content="{Binding Dto.D, StringFormat='D. {0}'}" 
+                                         GroupName="{Binding Dto.Id}"
+                                         IsChecked="{Binding IsAnswerD, Mode=TwoWay}"
+                                         IsEnabled="{Binding IsReadOnly, Converter={StaticResource InvertBoolConverter}}"/>
+
+                            <Image Source="{Binding ResultIcon}" HeightRequest="20" HorizontalOptions="End" IsVisible="{Binding IsReadOnly}"/>
+                            <Label Text="{Binding ResultText}" TextColor="{Binding ResultTextColor}" FontAttributes="Bold" IsVisible="{Binding IsReadOnly}"/>
+
+                        </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Button Grid.Row="2" 
+                Text="NỘP BÀI" 
+                Command="{Binding SubmitCommand}" 
+                Margin="10" 
+                BackgroundColor="#2196F3" 
+                TextColor="White"
+                IsVisible="{Binding IsReviewMode, Converter={StaticResource InvertBoolConverter}}"/>
+
+        <!--<StackLayout Grid.Row="2" Orientation="Vertical" IsVisible="{Binding IsReviewMode}" Margin="10" Spacing="5">
+            <Button Text="LÀM LẠI BÀI" 
+                    Command="{Binding ResetStatusCommand}" 
+                    BackgroundColor="Orange" 
+                    TextColor="White"/>
+            <Button Text="QUAY VỀ DANH SÁCH" 
+                    Clicked="OnBackClicked" 
+                    BackgroundColor="Gray" 
+                    TextColor="White"/>
+        </StackLayout>-->
+    </Grid>
+</ContentPage>

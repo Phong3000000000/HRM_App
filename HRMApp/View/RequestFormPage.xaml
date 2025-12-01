@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HRMApp.View.RequestFormPage"
+             Title="Tạo yêu cầu"
+             BackgroundColor="#F5F6FA">
+
+    <Grid RowDefinitions="*,Auto">
+        <ScrollView>
+            <VerticalStackLayout Padding="16" Spacing="18">
+                
+                <!-- Chọn loại yêu cầu -->
+                <VerticalStackLayout Spacing="4">
+                    <Label Text="Loại yêu cầu" FontSize="14" TextColor="#444"/>
+                    <Picker x:Name="CategoryPicker" 
+                            Title="Chọn loại yêu cầu"
+                            SelectedIndexChanged="OnCategoryChanged">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Leave</x:String>
+                                <x:String>Overtime</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                </VerticalStackLayout>
+
+                <!-- Frame cho Leave Request -->
+                <Frame x:Name="LeaveFrame" 
+                       Padding="12" 
+                       CornerRadius="10" 
+                       BorderColor="#DDD" 
+                       HasShadow="False" 
+                       BackgroundColor="White"
+                       IsVisible="False">
+                    <VerticalStackLayout Spacing="12">
+                        <Label Text="Thông tin nghỉ phép" FontSize="14" TextColor="#444" FontAttributes="Bold"/>
+
+                        <!-- Chọn ngày nghỉ -->
+                        <Grid ColumnDefinitions="*,*" ColumnSpacing="12">
+                            <VerticalStackLayout>
+                                <Label Text="Từ buổi" FontSize="13" TextColor="#555"/>
+                                <Picker x:Name="FromSessionPicker">
+                                    <Picker.Items>
+                                        <x:String>Sáng</x:String>
+                                        <x:String>Chiều</x:String>
+                                    </Picker.Items>
+                                </Picker>
+                                <DatePicker x:Name="FromDatePicker"/>
+                            </VerticalStackLayout>
+
+                            <VerticalStackLayout Grid.Column="1">
+                                <Label Text="Đến buổi" FontSize="13" TextColor="#555"/>
+                                <Picker x:Name="ToSessionPicker">
+                                    <Picker.Items>
+                                        <x:String>Sáng</x:String>
+                                        <x:String>Chiều</x:String>
+                                    </Picker.Items>
+                                </Picker>
+                                <DatePicker x:Name="ToDatePicker"/>
+                            </VerticalStackLayout>
+                        </Grid>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Frame cho Overtime Request -->
+                <Frame x:Name="OvertimeFrame" 
+                       Padding="12" 
+                       CornerRadius="10" 
+                       BorderColor="#DDD" 
+                       HasShadow="False" 
+                       BackgroundColor="White"
+                       IsVisible="False">
+                    <VerticalStackLayout Spacing="12">
+                        <Label Text="Thông tin làm thêm giờ" FontSize="14" TextColor="#444" FontAttributes="Bold"/>
+                        
+                        <!-- Ngày làm thêm -->
+                        <VerticalStackLayout Spacing="4">
+                            <Label Text="Ngày làm thêm" FontSize="13" TextColor="#555"/>
+                            <DatePicker x:Name="OvertimeDatePicker"/>
+                        </VerticalStackLayout>
+
+                        <!-- Chỉ nhập số giờ OT -->
+                        <VerticalStackLayout Spacing="4">
+                            <Label Text="Số giờ OT" FontSize="13" TextColor="#555"/>
+                            <Entry x:Name="OvertimeHoursEntry" 
+                                   Placeholder="Nhập số giờ (VD: 3)"
+                                   Keyboard="Numeric"
+                                   TextChanged="OnOvertimeHoursChanged"/>
+                        </VerticalStackLayout>
+
+                        <!-- Hiển thị thời gian tính toán -->
+                        <Frame BackgroundColor="#E8F4F8" BorderColor="#B3D9E8" Padding="8">
+                            <VerticalStackLayout Spacing="4">
+                                <Label Text="Thời gian làm thêm (tự động tính):" FontSize="12" TextColor="#555"/>
+                                <Label x:Name="CalculatedTimeLabel" 
+                                       Text="Từ: -- Đến: --" 
+                                       FontSize="13" 
+                                       TextColor="#1568b2" 
+                                       FontAttributes="Bold"/>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Lý do chung -->
+                <VerticalStackLayout Spacing="4">
+                    <Label Text="Lý do / Mô tả" FontSize="14" TextColor="#444"/>
+                    <Frame BorderColor="#DDD" CornerRadius="8" Padding="6" HasShadow="False" BackgroundColor="White">
+                        <Editor x:Name="ReasonEditor"
+                                Placeholder="Nhập lý do..."
+                                AutoSize="TextChanges"
+                                FontSize="14"
+                                TextColor="#333"
+                                BackgroundColor="Transparent"/>
+                    </Frame>
+                </VerticalStackLayout>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <Button x:Name="SubmitButton"
+                Grid.Row="1"
+                Text="Gửi yêu cầu"
+                Margin="16,10"
+                HeightRequest="48"
+                BackgroundColor="#1568b2"
+                TextColor="White"
+                FontAttributes="Bold"
+                Clicked="OnSubmitClicked"
+                IsEnabled="False"/>
+    </Grid>
+</ContentPage>

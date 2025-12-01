@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HRMApp</name>
+    </assembly>
+    <members>
+        <member name="T:HRMApp.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+        <member name="T:Refit.Implementation.Generated">
+            <inheritdoc />
+        </member>
+        <member name="T:Refit.Implementation.Generated.HRMAppServicesApiIHrmApi">
+            <inheritdoc />
+        </member>
+        <member name="P:Refit.Implementation.Generated.HRMAppServicesApiIHrmApi.Client">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiIHrmApi.#ctor(System.Net.Http.HttpClient,Refit.IRequestBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiIHrmApi.LoginAsync(HRMApp.Model.LoginRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiIHrmApi.RegisterAsync(HRMApp.Model.RegisterRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiIHrmApi.TestProtectedAsync">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiIHrmApi.ChangePasswordAsync(HRMApp.Model.ChangePasswordRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiIHrmApi.HRMApp#Services#Api#IHrmApi#LoginAsync(HRMApp.Model.LoginRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiIHrmApi.HRMApp#Services#Api#IHrmApi#RegisterAsync(HRMApp.Model.RegisterRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiIHrmApi.HRMApp#Services#Api#IHrmApi#TestProtectedAsync">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiIHrmApi.HRMApp#Services#Api#IHrmApi#ChangePasswordAsync(HRMApp.Model.ChangePasswordRequest)">
+            <inheritdoc />
+        </member>
+        <member name="T:Refit.Implementation.Generated.HRMAppServicesApiILocalApi">
+            <inheritdoc />
+        </member>
+        <member name="P:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.Client">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.#ctor(System.Net.Http.HttpClient,Refit.IRequestBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.CheckinAsync(HRMApp.Services.Api.CheckinRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.CheckoutAsync(HRMApp.Services.Api.CheckoutRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.GetAttendanceStatusAsync(System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.GetPayrollPerformanceAsync(System.Guid,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.GetPayrollDailyAsync(System.Guid,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.HRMApp#Services#Api#ILocalApi#CheckinAsync(HRMApp.Services.Api.CheckinRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.HRMApp#Services#Api#ILocalApi#CheckoutAsync(HRMApp.Services.Api.CheckoutRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.HRMApp#Services#Api#ILocalApi#GetAttendanceStatusAsync(System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.HRMApp#Services#Api#ILocalApi#GetPayrollPerformanceAsync(System.Guid,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.HRMApp#Services#Api#ILocalApi#GetPayrollDailyAsync(System.Guid,System.String)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

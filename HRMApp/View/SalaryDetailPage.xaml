@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HRMApp.View.SalaryDetailPage"
+             Title="Chi tiết lương theo kỳ"
+             BackgroundColor="#F5F6FA">
+
+    <CollectionView x:Name="SalaryDetailCollection"
+                    ItemsSource="{Binding SalaryDetails}"
+                    SelectionMode="None"
+                    Margin="16"
+                    VerticalOptions="FillAndExpand">
+
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Frame BackgroundColor="White" Padding="14" CornerRadius="12" Margin="0,6" HasShadow="True">
+                    <VerticalStackLayout Spacing="6">
+
+                        <Grid ColumnDefinitions="*, Auto">
+                            <Label Text="{Binding Ngay}" FontAttributes="Bold" FontSize="15" VerticalOptions="Center"/>
+                            <Label Grid.Column="1" Text="{Binding TrangThai}" FontSize="13" TextColor="#666" VerticalOptions="Center" HorizontalTextAlignment="End"/>
+                        </Grid>
+
+                        <VerticalStackLayout Spacing="4" Padding="10" BackgroundColor="#F8F9FB">
+
+                            <Grid ColumnDefinitions="*,Auto">
+                                <Label Text="Số công thực tế" />
+                                <Label Text="{Binding SoCong, StringFormat='{0:N1} công'}" HorizontalTextAlignment="End" Grid.Column="1"/>
+                            </Grid>
+
+                            <Grid ColumnDefinitions="*,Auto">
+                                <Label Text="Phụ cấp" />
+                                <Label Text="{Binding PhuCap, StringFormat='{0:N0} đ'}" HorizontalTextAlignment="End" Grid.Column="1"/>
+                            </Grid>
+                            <Grid ColumnDefinitions="*,Auto">
+                                <Label Text="Thưởng" />
+                                <Label Text="{Binding Thuong, StringFormat='{0:N0} đ'}" HorizontalTextAlignment="End" Grid.Column="1"/>
+                            </Grid>
+                            <Grid ColumnDefinitions="*,Auto">
+                                <Label Text="Giờ OT được duyệt" />
+                                <Label Text="{Binding GioOtDuocDuyet, StringFormat='{0:N1} giờ'}"
+           HorizontalTextAlignment="End" Grid.Column="1"/>
+                            </Grid>
+
+                            <Grid ColumnDefinitions="*,Auto">
+                                <Label Text="Giờ OT thực tế" />
+                                <Label Text="{Binding GioOtThucTe, StringFormat='{0:N1} giờ'}"
+           HorizontalTextAlignment="End" Grid.Column="1"/>
+                            </Grid>
+
+                            <Grid ColumnDefinitions="*,Auto">
+                                <Label Text="Lương OT" />
+                                <Label Text="{Binding LuongOt, StringFormat='{0:N0} đ'}"
+           HorizontalTextAlignment="End" Grid.Column="1"/>
+                            </Grid>
+
+                            <Grid ColumnDefinitions="*,Auto">
+                                <Label Text="Phạt" TextColor="Red"/>
+                                <Label Text="{Binding Phat, StringFormat='-{0:N0} đ'}" TextColor="Red" HorizontalTextAlignment="End" Grid.Column="1"/>
+                            </Grid>
+
+                            <Grid ColumnDefinitions="*,Auto" Margin="0,5,0,0">
+                                <Label Text="Tổng lương ngày" FontAttributes="Bold"/>
+                                <Label Text="{Binding LuongNgay, StringFormat='{0:N0} đ'}" FontAttributes="Bold"
+                                       TextColor="#1568b2" HorizontalTextAlignment="End" Grid.Column="1"/>
+                            </Grid>
+
+                            <Label Text="{Binding GhiChu, StringFormat='Ghi chú: {0}'}" 
+                                   FontSize="12" TextColor="#999" 
+                                   IsVisible="{Binding GhiChu, Converter={StaticResource IsNotNullOrEmptyConverter}}"/>
+
+                        </VerticalStackLayout>
+
+                    </VerticalStackLayout>
+                </Frame>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+</ContentPage>

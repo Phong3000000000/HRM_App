@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HRMApp.View.TaskPage"
+             Title="Tác vụ"
+             BackgroundColor="#F5F6FA">
+
+    <Grid>
+        <ScrollView>
+            <VerticalStackLayout Padding="20" Spacing="15">
+
+                <Label Text="Danh sách tác vụ" FontSize="22" FontAttributes="Bold" />
+
+                <!--<Frame Padding="15" CornerRadius="10" BorderColor="LightGray">
+                    <StackLayout>
+                        <Label Text="Kiểm tra máy pha cà phê" FontAttributes="Bold" />
+                        <Label Text="Thời gian: 08:00 - 09:00" TextColor="Gray" />
+                    </StackLayout>
+                </Frame>
+
+                <Frame Padding="15" CornerRadius="10" BorderColor="LightGray">
+                    <StackLayout>
+                        <Label Text="Nhập hàng buổi sáng" FontAttributes="Bold" />
+                        <Label Text="Thời gian: 10:00 - 10:30" TextColor="Gray" />
+                    </StackLayout>
+                </Frame>-->
+
+                <Frame Padding="15" CornerRadius="10" BorderColor="#2196F3" BackgroundColor="#E3F2FD">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnTrainingTapped"/>
+                    </Frame.GestureRecognizers>
+
+                    <Grid ColumnDefinitions="*, Auto">
+                        <StackLayout Grid.Column="0">
+                            <Label Text="Đào tạo &amp; Đánh giá" FontAttributes="Bold" TextColor="#1565C0" FontSize="16"/>
+                            <Label Text="Làm bài kiểm tra năng lực" TextColor="Gray" FontSize="12"/>
+                        </StackLayout>
+                        <Label Grid.Column="1" Text="&#xf054;" FontFamily="FAS" TextColor="#1565C0" VerticalOptions="Center"/>
+                    </Grid>
+                </Frame>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

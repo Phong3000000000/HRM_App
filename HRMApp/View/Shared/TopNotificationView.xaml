@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HRMApp.View.Shared.TopNotificationView"
+             x:Name="this"
+             IsVisible="False"
+             TranslationY="-150"
+             BackgroundColor="Transparent">
+
+    <ContentView.GestureRecognizers>
+        <SwipeGestureRecognizer Direction="Up" Swiped="OnSwipeUp" />
+    </ContentView.GestureRecognizers>
+
+    <Frame CornerRadius="25"
+       Padding="15"
+       Margin="10,20,10,0"
+       BackgroundColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray900}}"
+       BorderColor="{AppThemeBinding Light={StaticResource Gray300}, Dark={StaticResource Gray600}}"
+       HasShadow="True">
+
+        <Grid ColumnDefinitions="Auto, *" ColumnSpacing="15">
+
+            <Image Grid.Column="0" 
+               Source="notification_top.png" 
+               Aspect="AspectFit" 
+               HeightRequest="30" 
+               WidthRequest="30" 
+               VerticalOptions="Center" />
+
+            <StackLayout Grid.Column="1" 
+                     VerticalOptions="Center" 
+                     Spacing="2">
+
+                <Label x:Name="TitleLabel"
+                   Text="Notification Title"
+                   FontAttributes="Bold"
+                   FontSize="16"
+                   TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" />
+
+                <Label x:Name="BodyLabel"
+                   Text="This is the notification body content."
+                   FontSize="14"
+                   TextColor="{AppThemeBinding Light={StaticResource Gray600}, Dark={StaticResource Gray400}}"
+                   MaxLines="2"
+                   LineBreakMode="TailTruncation" />
+
+            </StackLayout>
+
+        </Grid>
+
+        <Frame.GestureRecognizers>
+            <TapGestureRecognizer Tapped="OnNotificationTapped" />
+        </Frame.GestureRecognizers>
+    </Frame>
+</ContentView>

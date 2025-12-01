@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HRMApp.View.RequestListPage"
+             Title="Quản lý yêu cầu"
+             BackgroundColor="#F5F6FA">
+
+    <Grid RowDefinitions="Auto, *">
+        <Border Grid.Row="0" Margin="10" Padding="10" BackgroundColor="White" StrokeShape="RoundRectangle 10">
+            <VerticalStackLayout Spacing="10">
+                <Border Stroke="#E0E0E0" StrokeShape="RoundRectangle 5" Padding="5,0">
+                    <SearchBar x:Name="txtSearch" 
+                               Placeholder="Tìm theo tiêu đề..." 
+                               FontSize="14"
+                               TextChanged="OnFilterChanged"/>
+                </Border>
+
+                <Grid ColumnDefinitions="*,*" ColumnSpacing="10">
+                    <Border Grid.Column="0" Stroke="#E0E0E0" StrokeShape="RoundRectangle 5">
+                        <Picker x:Name="pickerStatus" Title="Trạng thái" SelectedIndexChanged="OnFilterChanged"/>
+                    </Border>
+
+                    <Border Grid.Column="1" Stroke="#E0E0E0" StrokeShape="RoundRectangle 5">
+                        <Picker x:Name="pickerCategory" Title="Loại đơn" SelectedIndexChanged="OnFilterChanged"/>
+                    </Border>
+                </Grid>
+
+                <HorizontalStackLayout Spacing="8" VerticalOptions="Center">
+                    <CheckBox x:Name="chkEnableDate" CheckedChanged="OnFilterChanged" Color="#1568b2"/>
+                    <Label Text="Ngày:" VerticalOptions="Center" TextColor="#333" FontSize="13"/>
+                    <DatePicker x:Name="pickerDate" 
+                                Format="dd/MM/yyyy" 
+                                DateSelected="OnFilterChanged" 
+                                VerticalOptions="Center"
+                                TextColor="#1568b2" FontAttributes="Bold"
+                                WidthRequest="100"/>
+                    <BoxView WidthRequest="1" HeightRequest="20" Color="LightGray" VerticalOptions="Center" Margin="5,0"/>
+
+                    <Label Text="Xếp:" VerticalOptions="Center" TextColor="#333" FontSize="13"/>
+                    <Picker x:Name="pickerSort" 
+                            SelectedIndexChanged="OnFilterChanged"
+                            TextColor="#1568b2" 
+                            FontAttributes="Bold"
+                            WidthRequest="110">
+                    </Picker>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </Border>
+
+        <CollectionView x:Name="LeaveCollection"
+                        Grid.Row="1"
+                        ItemsSource="{Binding LeaveRequests}"
+                        SelectionMode="None"
+                        Margin="0,0,0,80">
+            <CollectionView.EmptyView>
+                <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="10">
+                    <Label Text="Không tìm thấy yêu cầu nào" FontSize="16" TextColor="Gray" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </CollectionView.EmptyView>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Border StrokeShape="RoundRectangle 10" BackgroundColor="White" Padding="16" Margin="12,6">
+                        <Grid RowDefinitions="Auto,Auto,Auto,Auto" ColumnDefinitions="*,Auto">
+                            <Label Grid.Row="0" Grid.Column="0" Text="{Binding Title}" FontSize="16" FontAttributes="Bold" TextColor="#333"/>
+                            <Label Grid.Row="0" Grid.Column="1" Text="{Binding StatusDisplay}" FontSize="12" TextColor="{Binding StatusColor}" FontAttributes="Bold" VerticalOptions="Center"/>
+
+                            <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding DisplayDateRange}" FontSize="14" TextColor="#1568b2" FontAttributes="Bold" Margin="0,4,0,0"/>
+
+                            <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" FontSize="12" TextColor="#888" Margin="0,2,0,0">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Tạo lúc: " />
+                                        <Span Text="{Binding CreatedAtDisplay}" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+
+                            <Label Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" FontSize="12" TextColor="#888" Margin="0,2,0,0" LineBreakMode="TailTruncation">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Mô tả: " />
+                                        <Span Text="{Binding Description}" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Button Text="+" 
+                Grid.Row="1"
+                HorizontalOptions="End" VerticalOptions="End"
+                Margin="20"
+                HeightRequest="56" WidthRequest="56"
+                CornerRadius="28"
+                BackgroundColor="#1568b2"
+                TextColor="White"
+                FontSize="24"
+                Clicked="OnAddLeaveClicked"
+                Shadow="{Shadow Brush=Black, Offset='2,2', Radius=5, Opacity=0.2}"/>
+    </Grid>
+</ContentPage>

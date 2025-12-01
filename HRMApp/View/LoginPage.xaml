@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HRMApp.View.LoginPage"
+             InputTransparent="False"
+             IsVisible="True"
+             x:Name="ThisPopup"
+             xmlns:vm="clr-namespace:HRMApp.ViewModels"
+             xmlns:converters="clr-namespace:HRMApp.Converters"
+            Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False" >
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:BoolToColorConverter x:Key="BoolToColorConverter" />
+            <converters:InverseBooleanConverter x:Key="InverseBooleanConverter" />
+            <converters:BoolToTextConverter x:Key="BoolToTextConverter" />
+            <converters:BoolToUnderlineColorConverter x:Key="BoolToUnderlineColorConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#1e5caa" Offset="0.0" />
+            <GradientStop Color="#4fa3f7" Offset="0.7" />
+            <GradientStop Color="#89c4f4" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <Grid VerticalOptions="Center"
+          HorizontalOptions="Center"
+          WidthRequest="380"
+          InputTransparent="False">
+
+        <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,0,1,1"
+                    AbsoluteLayout.LayoutFlags="All"
+                    InputTransparent="False">
+
+            <!-- Nút đóng -->
+            <!--<Button Text="x"
+                    BackgroundColor="Transparent"
+                    TextColor="#ffffff"
+                    FontSize="18"
+                    FontAttributes="Bold"
+                    Margin="20,0,0,0"
+                    Padding="0"
+                    AbsoluteLayout.LayoutBounds="1,-0.02,30,30"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    ZIndex="100"
+                    Clicked="Close_Clicked" />-->
+
+            <!-- Nội dung -->
+            <Frame HasShadow="False"
+                   BorderColor="#d0e3ff"
+                   CornerRadius="4"
+                   Padding="20"
+                   BackgroundColor="White"
+                   WidthRequest="340"
+                   MaximumHeightRequest="640"
+                   AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1"
+                   AbsoluteLayout.LayoutFlags="PositionProportional">
+
+                <VerticalStackLayout Spacing="10">
+
+                    <!-- Tabs -->
+                    <!--<Grid ColumnDefinitions="*,*" Padding="0,0,0,10">
+                        --><!-- Đăng nhập --><!--
+                        <VerticalStackLayout Grid.Column="0" HorizontalOptions="Center">
+                            <Label Text="Đăng nhập" HorizontalOptions="Center"
+                                   FontAttributes="Bold"
+                                   TextColor="{Binding IsLoginMode, Converter={StaticResource BoolToColorConverter}, ConverterParameter=true}">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding ShowLoginCommand}" />
+                                </Label.GestureRecognizers>
+                            </Label>
+
+                            --><!-- Gạch chân--><!--
+                            <BoxView HeightRequest="2"
+             WidthRequest="140"
+             Margin="0,4,0,0"
+             Color="{Binding IsLoginMode, Converter={StaticResource BoolToUnderlineColorConverter}, ConverterParameter=true}" />
+                        </VerticalStackLayout>
+
+                        --><!-- Đăng ký --><!--
+                        <VerticalStackLayout Grid.Column="1" HorizontalOptions="Center">
+                            <Label Text="Đăng ký" HorizontalOptions="Center"
+           FontAttributes="Bold"
+           TextColor="{Binding IsLoginMode, Converter={StaticResource BoolToColorConverter}, ConverterParameter=false}">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding ShowRegisterCommand}" />
+                                </Label.GestureRecognizers>
+                            </Label>
+
+                            --><!-- Gạch chân dưới tabs --><!--
+                            <BoxView HeightRequest="2"
+             WidthRequest="140"
+             Margin="0,4,0,0"
+             Color="{Binding IsLoginMode, Converter={StaticResource BoolToUnderlineColorConverter}, ConverterParameter=false}" />
+                        </VerticalStackLayout>
+
+                    </Grid>-->
+
+                    <!-- Chuyển qua lại giữa tiêu đề đăng nhập và đăng ký -->
+                    <Label HorizontalOptions="Center" FontAttributes="Bold" FontSize="18">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{Binding IsLoginMode, Converter={StaticResource BoolToTextConverter}, ConverterParameter='Đăng nhập|Đăng ký'}" FontAttributes="Bold" TextColor="#1e5caa"/>
+                                <Span Text=" HRM" TextColor="Red" FontAttributes="Bold"/>
+                                <Span Text="App" TextColor="#1e5caa" FontAttributes="Bold"></Span>
+                                <Span Text="ID" TextColor="Red" FontAttributes="Bold" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+
+                    <!-- LoginForm -->
+                    <StackLayout x:Name="LoginForm">
+                        <StackLayout.Triggers>
+                            <DataTrigger TargetType="StackLayout" Binding="{Binding IsLoginMode}" Value="True">
+                                <Setter Property="IsVisible" Value="True" />
+                            </DataTrigger>
+                            <DataTrigger TargetType="StackLayout" Binding="{Binding IsLoginMode}" Value="False">
+                                <Setter Property="IsVisible" Value="False" />
+                            </DataTrigger>
+                        </StackLayout.Triggers>
+
+                        <!-- Gmail/Facebook -->
+                        <Grid ColumnDefinitions="*,*" ColumnSpacing="10">
+                            <Button Text="G Gmail" BackgroundColor="#DB4437" FontAttributes="Bold" TextColor="White" Grid.Column="0" />
+                            <Button Text="f Facebook"
+        BackgroundColor="#3B5998"
+        FontAttributes="Bold"
+        TextColor="White"
+        Grid.Column="1"
+        Command="{Binding FacebookLoginCommand}" />
+                        </Grid>
+
+                        <!--Username-->
+                        <Grid ColumnDefinitions="30,*"
+                                Margin="0,10,0,0">
+                            <!-- Icon Font Awesome -->
+                            <Label Text="&#xf007;"
+                                FontFamily="FontAwesome"
+                                FontSize="18"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                TextColor="#4181b4"/>
+
+                                            <!-- Entry -->
+                                            <Entry Grid.Column="1"
+                                Placeholder="Tên đăng nhập"
+                                BackgroundColor="Transparent"
+                                FontSize="14"
+                                Text="{Binding LoginUsername}" 
+                                />
+
+                        </Grid>
+                        <Label Text="{Binding LoginUsernameError}"
+                             TextColor="Red"
+                             FontSize="12"
+                             Margin="0,0,0,0" />
+                        <!-- Gạch dưới -->
+                        <BoxView HeightRequest="1"
+                              Color="#f3f7fa"
+                              Margin="0,0,0,12"/>
+                        <!--Password-->
+                        <Grid ColumnDefinitions="30,*"
+                              Margin="0">
+                            <!-- Icon Font Awesome -->
+                            <Label Text="&#xf023;"
+                                     FontFamily="FontAwesome"
+                                     FontSize="18"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="Center"
+                                     TextColor="#4181b4"/>
+
+                            <!-- Entry -->
+                            <Entry Grid.Column="1"
+                                 Placeholder="Mật khẩu"
+                                 BackgroundColor="Transparent"
+                                 FontSize="14"
+                                 IsPassword="True"
+                                 Text="{Binding LoginPassword}"
+                                 />
+
+                        </Grid>
+                        <Label Text="{Binding LoginPasswordError}"
+                              TextColor="Red"
+                              FontSize="12"
+                              Margin="0,0,0,0" />
+                        <!--Nút đăng nhập-->
+                        <BoxView HeightRequest="1"
+                               Color="#f3f7fa"
+                               Margin="0,0,0,12"/>
+                        <Button Text="Đăng nhập" BackgroundColor="#007ACC" TextColor="White" FontAttributes="Bold" Command="{Binding LoginCommand}" />
+
+                        <Grid ColumnDefinitions="*,Auto" VerticalOptions="Center">
+                            <!-- Nhớ đăng nhập -->
+                            <StackLayout Grid.Column="0"
+                                 Orientation="Horizontal"
+                                 Spacing="6"
+                                 VerticalOptions="Center">
+                                <CheckBox
+                                    IsChecked="{Binding RememberMe}"
+                                    Color="#1e5caa"
+                                    HeightRequest="20"
+                                    WidthRequest="20"
+                                    VerticalOptions="Center" />
+                                                            <Label Text="Nhớ đăng nhập"
+                                       FontSize="13"
+                                       VerticalOptions="Center"
+                                       TextColor="Black" />
+                            </StackLayout>
+
+
+                            <!-- QuÃªn máº­t kháº©u -->
+                            <Label Margin="60,0,0,0" Text="Quên mật khẩu?"
+                                   Grid.Column="1"
+                                   FontSize="13"
+                                   TextColor="#085ba9"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="End" />
+                        </Grid>
+
+                    </StackLayout>
+
+                    <!-- RegisterForm -->
+                    <StackLayout x:Name="RegisterForm">
+                        <StackLayout.Triggers>
+                            <DataTrigger TargetType="StackLayout" Binding="{Binding IsLoginMode}" Value="True">
+                                <Setter Property="IsVisible" Value="False" />
+                            </DataTrigger>
+                            <DataTrigger TargetType="StackLayout" Binding="{Binding IsLoginMode}" Value="False">
+                                <Setter Property="IsVisible" Value="True" />
+                            </DataTrigger>
+                        </StackLayout.Triggers>
+
+                        <!-- Gmail/Facebook -->
+                        <Grid ColumnDefinitions="*,*" ColumnSpacing="10">
+                            <Button Text="G Gmail" BackgroundColor="#DB4437" FontAttributes="Bold" TextColor="White" Grid.Column="0" />
+                            <Button Text="f Facebook" BackgroundColor="#3B5998" FontAttributes="Bold" TextColor="White" Grid.Column="1" />
+                        </Grid>
+
+
+                        <!--Name-->
+                        <Grid ColumnDefinitions="30,*"
+                              Margin="0,10,0,0">
+                            <!-- Icon Font Awesome -->
+                            <Label Text="&#xf007;"
+                                   FontFamily="FontAwesome"
+                                   FontSize="18"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Center"
+                                   TextColor="#4181b4"/>
+
+                            <!-- Entry -->
+                            <Entry Grid.Column="1"
+                                   Placeholder="Tên đăng nhập"
+                                   BackgroundColor="Transparent"
+                                   FontSize="14"
+                                   Text="{Binding RegisterUsername}" 
+                                   />
+                        </Grid>
+                        <!-- Gáº¡ch dÆ°á»›i -->
+                        <BoxView HeightRequest="1"
+                                 Color="#f3f7fa"
+                                 Margin="0,0,0,12"/>
+
+                        <!--Email-->
+                        <Grid ColumnDefinitions="30,*"
+                              Margin="0">
+                            <!-- Icon Font Awesome -->
+                            <Label Text="&#xf2b6;"
+                                   FontFamily="FontAwesome"
+                                   FontSize="18"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Center"
+                                   TextColor="#4181b4"/>
+
+                            <!-- Entry -->
+                            <Entry Grid.Column="1"
+                                   Placeholder="Email"
+                                   BackgroundColor="Transparent"
+                                   FontSize="14"
+                                   Text="{Binding RegisterEmail}"
+                                   />
+
+                        </Grid>
+                        <Label Text="{Binding RegisterEmailError}"
+                              TextColor="Red"
+                              FontSize="12"
+                              Margin="0,0,0,0" />
+
+
+                        <!-- Gáº¡ch dÆ°á»›i -->
+                        <BoxView HeightRequest="1"
+                                 Color="#f3f7fa"
+                                 Margin="0,0,0,12"/>
+                        <!--Password-->
+                        <Grid ColumnDefinitions="30,*"
+                              Margin="0">
+                            <!-- Icon Font Awesome -->
+                            <Label Text="&#xf023;"
+                                   FontFamily="FontAwesome"
+                                   FontSize="18"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Center"
+                                   TextColor="#4181b4"/>
+
+                            <!-- Entry -->
+                            <Entry Grid.Column="1"
+                                   Placeholder="Mật khẩu"
+                                   BackgroundColor="Transparent"
+                                   FontSize="14"
+                                   IsPassword="True"
+                                   Text="{Binding RegisterPassword}"
+                                   />
+
+                        </Grid>
+                        <Label Text="{Binding RegisterPasswordError}"
+                              TextColor="Red"
+                              FontSize="12"
+                              Margin="0,0,0,0" />
+                        <!-- Gáº¡ch dÆ°á»›i -->
+                        <BoxView HeightRequest="1"
+                                 Color="#f3f7fa"
+                                 Margin="0,0,0,12"/>
+                        <!--ConfirmPassword-->
+                        <Grid ColumnDefinitions="30,*"
+                             Margin="0">
+                            <!-- Icon Font Awesome -->
+                            <Label Text="&#xf023;"
+                                   FontFamily="FontAwesome"
+                                   FontSize="18"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Center"
+                                   TextColor="#4181b4"/>
+
+                            <!-- Entry -->
+                            <Entry Grid.Column="1"
+                                   Placeholder="Xác nhận mật khẩu"
+                                   BackgroundColor="Transparent"
+                                   FontSize="14"
+                                   IsPassword="True"
+                                   Text="{Binding RegisterConfirmPassword}"
+                                   />
+
+                        </Grid>
+                        <Label Text="{Binding RegisterConfirmPasswordError}"
+                                TextColor="Red"
+                                FontSize="12"
+                                Margin="0,0,0,0" />
+                        <!-- Gáº¡ch dÆ°á»›i -->
+                        <BoxView HeightRequest="1"
+                                 Color="#f3f7fa"
+                                 Margin="0,0,0,12"/>
+
+                        <!--<Button Text="Xác thực Captcha"
+                                Clicked="OnVerifyCaptchaClicked"
+                                WidthRequest="300"
+                                HeightRequest="50"
+                                Margin="0,0,0,10"/>-->
+
+
+
+                        <Button Text="Đăng ký" BackgroundColor="#007ACC" TextColor="White" FontAttributes="Bold" Command="{Binding RegisterCommand}"/>
+
+                        <HorizontalStackLayout HorizontalOptions="Center" Margin="0,12,0,0">
+                            <Label Text="Bạn đã có tài khoản? "
+                               FontSize="15"
+                               TextColor="Black" />
+
+                            <Label Text="Đăng nhập "
+                                   FontSize="15"
+                                   TextColor="#085ba9">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding ShowLoginCommand}" />
+                                </Label.GestureRecognizers>
+                            </Label>
+                            <Label Text="tại đây"
+                                 FontSize="15"
+                                 TextColor="Black" />
+                        </HorizontalStackLayout>
+
+                    </StackLayout>
+
+                </VerticalStackLayout>
+            </Frame>
+        </AbsoluteLayout>
+    </Grid>
+</ContentPage>

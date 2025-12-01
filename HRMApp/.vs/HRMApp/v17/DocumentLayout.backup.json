@@ -1,0 +1,1377 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\services\\notification\\signalrservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:services\\notification\\signalrservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\services\\api\\ilocalapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:services\\api\\ilocalapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\schedulepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\schedulepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\viewmodels\\scheduleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:viewmodels\\scheduleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\schedulepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\schedulepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\viewmodels\\notificationdetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:viewmodels\\notificationdetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\model\\dto\\workscheduledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:model\\dto\\workscheduledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\model\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:model\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\viewmodels\\notificationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:viewmodels\\notificationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\model\\changepasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:model\\changepasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\taskpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\taskpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\profilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\profilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\newsdetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\newsdetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\changepasswordpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\changepasswordpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\newsdetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\newsdetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\newslistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\newslistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\notificationdetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\notificationdetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\reportselectionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\reportselectionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\viewmodels\\traininglistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:viewmodels\\traininglistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\viewmodels\\trainingdetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:viewmodels\\trainingdetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\viewmodels\\questionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:viewmodels\\questionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\trainingdetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\trainingdetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\converters\\booltocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:converters\\booltocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\converters\\booltotextconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:converters\\booltotextconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\converters\\booltounderlinecolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:converters\\booltounderlinecolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\converters\\counttoboolconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:converters\\counttoboolconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\converters\\inversebooleanconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:converters\\inversebooleanconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\converters\\invertboolconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:converters\\invertboolconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\requestlistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\requestlistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\requestlistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\requestlistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\model\\requestmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:model\\requestmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\model\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:model\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\model\\notification\\devicestatusmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:model\\notification\\devicestatusmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\model\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:model\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\requestformpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\requestformpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\services\\notification\\devicenotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:services\\notification\\devicenotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\services\\notification\\notificationstateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:services\\notification\\notificationstateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\notificationpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\notificationpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\services\\api\\ihrmapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:services\\api\\ihrmapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\trainingdetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\trainingdetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\notificationdetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\notificationdetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\traininglistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\traininglistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\traininglistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\traininglistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\model\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:model\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\model\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:model\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\google-services.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:google-services.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\model\\notification\\signalrnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:model\\notification\\signalrnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\model\\notification\\fcmtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:model\\notification\\fcmtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\salarydetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\salarydetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\requestformpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\requestformpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\newslistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\newslistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\reportselectionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\reportselectionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\shared\\topnotificationview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\shared\\topnotificationview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\shared\\topnotificationview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\shared\\topnotificationview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PHONG\\.nuget\\packages\\microsoft.maui.resizetizer\\9.0.51\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\model\\training.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:model\\training.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\taskpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\taskpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\services\\wifi\\iwifiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:services\\wifi\\iwifiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\converters\\timeagoconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:converters\\timeagoconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\converters\\stringeqconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:converters\\stringeqconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\converters\\counttovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:converters\\counttovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\salarydetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\salarydetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\shared\\notificationbadge.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\shared\\notificationbadge.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\shared\\notificationbadge.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\shared\\notificationbadge.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\shared\\notificationbadge.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\shared\\notificationbadge.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\platforms\\android\\wifiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:platforms\\android\\wifiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\model\\userresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:model\\userresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\platforms\\android\\androidmanifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:platforms\\android\\androidmanifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\salarysummarypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\salarysummarypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\salarysummarypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\salarysummarypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\view\\changepasswordpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:view\\changepasswordpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\platforms\\android\\mainapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:platforms\\android\\mainapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\helpers\\servicehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:helpers\\servicehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\platforms\\android\\resources\\values\\strings.xml||{6B79B2C4-8503-4A04-8248-ADCEF2B49CB1}",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:platforms\\android\\resources\\values\\strings.xml||{6B79B2C4-8503-4A04-8248-ADCEF2B49CB1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|c:\\users\\phong\\downloads\\doantotnghiep\\hrm\\hrm_app\\hrmapp\\hrmapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CE1A559C-A78A-49BC-B6E3-523617B680D7}|HRMApp.csproj|solutionrelative:hrmapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SignalRService.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Services\\Notification\\SignalRService.cs",
+              "RelativeDocumentMoniker": "Services\\Notification\\SignalRService.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Services\\Notification\\SignalRService.cs",
+              "RelativeToolTip": "Services\\Notification\\SignalRService.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAA6wEEAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T02:13:56.084Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NotificationViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\ViewModels\\NotificationViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\NotificationViewModel.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\ViewModels\\NotificationViewModel.cs",
+              "RelativeToolTip": "ViewModels\\NotificationViewModel.cs",
+              "ViewState": "AgIAAFQBAAAAAAAAAAAuwF0BAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T11:49:44.782Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "NotificationStateService.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Services\\Notification\\NotificationStateService.cs",
+              "RelativeDocumentMoniker": "Services\\Notification\\NotificationStateService.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Services\\Notification\\NotificationStateService.cs",
+              "RelativeToolTip": "Services\\Notification\\NotificationStateService.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAcwEwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T14:46:48.943Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAFABAAAAAAAAAAAuwGYBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T04:23:22.224Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "MauiProgram.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\MauiProgram.cs",
+              "RelativeToolTip": "MauiProgram.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAcwB4AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T18:45:30.993Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "NotificationPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\NotificationPage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\NotificationPage.xaml.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\NotificationPage.xaml.cs",
+              "RelativeToolTip": "View\\NotificationPage.xaml.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAqwD0AAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T02:33:54.497Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "DeviceStatusModel.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Model\\Notification\\DeviceStatusModel.cs",
+              "RelativeDocumentMoniker": "Model\\Notification\\DeviceStatusModel.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Model\\Notification\\DeviceStatusModel.cs",
+              "RelativeToolTip": "Model\\Notification\\DeviceStatusModel.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA9wBEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T02:31:08.269Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "DeviceNotificationService.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Services\\Notification\\DeviceNotificationService.cs",
+              "RelativeDocumentMoniker": "Services\\Notification\\DeviceNotificationService.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Services\\Notification\\DeviceNotificationService.cs",
+              "RelativeToolTip": "Services\\Notification\\DeviceNotificationService.cs",
+              "ViewState": "AgIAAI8BAAAAAAAAAAAuwJYBAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T12:09:40.041Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\MainPage.xaml.cs",
+              "RelativeToolTip": "View\\MainPage.xaml.cs",
+              "ViewState": "AgIAACwCAAAAAAAAAAAAACcCAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T14:30:06.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\AppShell.xaml",
+              "RelativeDocumentMoniker": "AppShell.xaml",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\AppShell.xaml",
+              "RelativeToolTip": "AppShell.xaml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAACMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-13T16:27:24.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ILocalApi.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Services\\Api\\ILocalApi.cs",
+              "RelativeDocumentMoniker": "Services\\Api\\ILocalApi.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Services\\Api\\ILocalApi.cs",
+              "RelativeToolTip": "Services\\Api\\ILocalApi.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAkwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T07:37:19.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SchedulePage.xaml",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\SchedulePage.xaml",
+              "RelativeDocumentMoniker": "View\\SchedulePage.xaml",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\SchedulePage.xaml",
+              "RelativeToolTip": "View\\SchedulePage.xaml",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAAwHoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-28T11:35:37.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ScheduleViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\ViewModels\\ScheduleViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ScheduleViewModel.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\ViewModels\\ScheduleViewModel.cs",
+              "RelativeToolTip": "ViewModels\\ScheduleViewModel.cs",
+              "ViewState": "AgIAAN0AAAAAAAAAAAAqwPAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T05:17:40.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SchedulePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\SchedulePage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\SchedulePage.xaml.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\SchedulePage.xaml.cs",
+              "RelativeToolTip": "View\\SchedulePage.xaml.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAADwvwgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T05:14:29.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "AppShell.xaml.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\AppShell.xaml.cs",
+              "RelativeToolTip": "AppShell.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T04:05:17.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "NotificationDetailViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\ViewModels\\NotificationDetailViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\NotificationDetailViewModel.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\ViewModels\\NotificationDetailViewModel.cs",
+              "RelativeToolTip": "ViewModels\\NotificationDetailViewModel.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAmwBYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T11:48:24.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "WorkScheduleDto.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Model\\Dto\\WorkScheduleDto.cs",
+              "RelativeDocumentMoniker": "Model\\Dto\\WorkScheduleDto.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Model\\Dto\\WorkScheduleDto.cs",
+              "RelativeToolTip": "Model\\Dto\\WorkScheduleDto.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAA6wDcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T05:16:06.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Model\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "Model\\ApiResponse.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Model\\ApiResponse.cs",
+              "RelativeToolTip": "Model\\ApiResponse.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAiwCUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T16:58:26.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ChangePasswordRequest.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Model\\ChangePasswordRequest.cs",
+              "RelativeDocumentMoniker": "Model\\ChangePasswordRequest.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Model\\ChangePasswordRequest.cs",
+              "RelativeToolTip": "Model\\ChangePasswordRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T15:26:47.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProfilePage.xaml",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\ProfilePage.xaml",
+              "RelativeDocumentMoniker": "View\\ProfilePage.xaml",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\ProfilePage.xaml",
+              "RelativeToolTip": "View\\ProfilePage.xaml",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAQwEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-07T06:58:09.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TaskPage.xaml",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\TaskPage.xaml",
+              "RelativeDocumentMoniker": "View\\TaskPage.xaml",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\TaskPage.xaml",
+              "RelativeToolTip": "View\\TaskPage.xaml",
+              "ViewState": "AgIAABcAAAAAAAAAAAAQwCsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-07T06:56:26.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "NewsDetailPage.xaml",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\NewsDetailPage.xaml",
+              "RelativeDocumentMoniker": "View\\NewsDetailPage.xaml",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\NewsDetailPage.xaml",
+              "RelativeToolTip": "View\\NewsDetailPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-20T12:55:00.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ChangePasswordPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\ChangePasswordPage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\ChangePasswordPage.xaml.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\ChangePasswordPage.xaml.cs",
+              "RelativeToolTip": "View\\ChangePasswordPage.xaml.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAUwD0AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T15:32:14.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\LoginPage.xaml.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\LoginPage.xaml.cs",
+              "RelativeToolTip": "View\\LoginPage.xaml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T16:04:28.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "NewsDetailPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\NewsDetailPage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\NewsDetailPage.xaml.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\NewsDetailPage.xaml.cs",
+              "RelativeToolTip": "View\\NewsDetailPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T12:55:13.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "NewsListPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\NewsListPage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\NewsListPage.xaml.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\NewsListPage.xaml.cs",
+              "RelativeToolTip": "View\\NewsListPage.xaml.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T05:16:52.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "NotificationDetailPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\NotificationDetailPage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\NotificationDetailPage.xaml.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\NotificationDetailPage.xaml.cs",
+              "RelativeToolTip": "View\\NotificationDetailPage.xaml.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T04:41:21.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ProfilePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\ProfilePage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\ProfilePage.xaml.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\ProfilePage.xaml.cs",
+              "RelativeToolTip": "View\\ProfilePage.xaml.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAA1wCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T15:15:17.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ReportSelectionPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\ReportSelectionPage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\ReportSelectionPage.xaml.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\ReportSelectionPage.xaml.cs",
+              "RelativeToolTip": "View\\ReportSelectionPage.xaml.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAswF0AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T13:03:06.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "TrainingListViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\ViewModels\\TrainingListViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\TrainingListViewModel.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\ViewModels\\TrainingListViewModel.cs",
+              "RelativeToolTip": "ViewModels\\TrainingListViewModel.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAqwHkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T03:33:20.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "TrainingDetailViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\ViewModels\\TrainingDetailViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\TrainingDetailViewModel.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\ViewModels\\TrainingDetailViewModel.cs",
+              "RelativeToolTip": "ViewModels\\TrainingDetailViewModel.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwBEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T04:28:03.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "QuestionViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\ViewModels\\QuestionViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\QuestionViewModel.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\ViewModels\\QuestionViewModel.cs",
+              "RelativeToolTip": "ViewModels\\QuestionViewModel.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAqwGgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T14:05:45.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "TrainingDetailPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\TrainingDetailPage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\TrainingDetailPage.xaml.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\TrainingDetailPage.xaml.cs",
+              "RelativeToolTip": "View\\TrainingDetailPage.xaml.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAqwBoAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T03:33:30.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "BoolToColorConverter.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Converters\\BoolToColorConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\BoolToColorConverter.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Converters\\BoolToColorConverter.cs",
+              "RelativeToolTip": "Converters\\BoolToColorConverter.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T16:13:55.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "BoolToTextConverter.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Converters\\BoolToTextConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\BoolToTextConverter.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Converters\\BoolToTextConverter.cs",
+              "RelativeToolTip": "Converters\\BoolToTextConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T16:14:25.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "BoolToUnderlineColorConverter.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Converters\\BoolToUnderlineColorConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\BoolToUnderlineColorConverter.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Converters\\BoolToUnderlineColorConverter.cs",
+              "RelativeToolTip": "Converters\\BoolToUnderlineColorConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T16:14:32.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CountToBoolConverter.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Converters\\CountToBoolConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\CountToBoolConverter.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Converters\\CountToBoolConverter.cs",
+              "RelativeToolTip": "Converters\\CountToBoolConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T18:32:28.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "InverseBooleanConverter.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Converters\\InverseBooleanConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\InverseBooleanConverter.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Converters\\InverseBooleanConverter.cs",
+              "RelativeToolTip": "Converters\\InverseBooleanConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T16:14:19.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "InvertBoolConverter.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Converters\\InvertBoolConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\InvertBoolConverter.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Converters\\InvertBoolConverter.cs",
+              "RelativeToolTip": "Converters\\InvertBoolConverter.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAqwBoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T06:16:09.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "RequestListPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\RequestListPage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\RequestListPage.xaml.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\RequestListPage.xaml.cs",
+              "RelativeToolTip": "View\\RequestListPage.xaml.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAwwGwAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T03:06:11.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "RequestModels.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Model\\RequestModels.cs",
+              "RelativeDocumentMoniker": "Model\\RequestModels.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Model\\RequestModels.cs",
+              "RelativeToolTip": "Model\\RequestModels.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAuwFsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T17:06:33.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "RequestListPage.xaml",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\RequestListPage.xaml",
+              "RelativeDocumentMoniker": "View\\RequestListPage.xaml",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\RequestListPage.xaml",
+              "RelativeToolTip": "View\\RequestListPage.xaml",
+              "ViewState": "AgIAABkAAAAAAAAAAAAcwCcAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-07T03:05:55.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Enums.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Model\\Enums.cs",
+              "RelativeDocumentMoniker": "Model\\Enums.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Model\\Enums.cs",
+              "RelativeToolTip": "Model\\Enums.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T07:22:08.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "RegisterRequest.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Model\\RegisterRequest.cs",
+              "RelativeDocumentMoniker": "Model\\RegisterRequest.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Model\\RegisterRequest.cs",
+              "RelativeToolTip": "Model\\RegisterRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T16:48:43.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "RequestFormPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\RequestFormPage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\RequestFormPage.xaml.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\RequestFormPage.xaml.cs",
+              "RelativeToolTip": "View\\RequestFormPage.xaml.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowJgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T03:06:42.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "IHrmApi.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Services\\Api\\IHrmApi.cs",
+              "RelativeDocumentMoniker": "Services\\Api\\IHrmApi.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Services\\Api\\IHrmApi.cs",
+              "RelativeToolTip": "Services\\Api\\IHrmApi.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAqwA8AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T18:32:50.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "TrainingDetailPage.xaml",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\TrainingDetailPage.xaml",
+              "RelativeDocumentMoniker": "View\\TrainingDetailPage.xaml",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\TrainingDetailPage.xaml",
+              "RelativeToolTip": "View\\TrainingDetailPage.xaml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAwDUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-26T14:28:20.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "NotificationDetailPage.xaml",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\NotificationDetailPage.xaml",
+              "RelativeDocumentMoniker": "View\\NotificationDetailPage.xaml",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\NotificationDetailPage.xaml",
+              "RelativeToolTip": "View\\NotificationDetailPage.xaml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAB0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-14T04:40:58.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "TrainingListPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\TrainingListPage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\TrainingListPage.xaml.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\TrainingListPage.xaml.cs",
+              "RelativeToolTip": "View\\TrainingListPage.xaml.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAqwCAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T05:55:07.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "TrainingListPage.xaml",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\TrainingListPage.xaml",
+              "RelativeDocumentMoniker": "View\\TrainingListPage.xaml",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\TrainingListPage.xaml",
+              "RelativeToolTip": "View\\TrainingListPage.xaml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAwBYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-16T05:52:37.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Model\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "Model\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Model\\LoginRequest.cs",
+              "RelativeToolTip": "Model\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T16:50:44.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "LoginResponse.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Model\\LoginResponse.cs",
+              "RelativeDocumentMoniker": "Model\\LoginResponse.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Model\\LoginResponse.cs",
+              "RelativeToolTip": "Model\\LoginResponse.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAUwCsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T10:13:10.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "SignalRNotification.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Model\\Notification\\SignalRNotification.cs",
+              "RelativeDocumentMoniker": "Model\\Notification\\SignalRNotification.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Model\\Notification\\SignalRNotification.cs",
+              "RelativeToolTip": "Model\\Notification\\SignalRNotification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T02:30:21.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "google-services.json",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\google-services.json",
+              "RelativeDocumentMoniker": "google-services.json",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\google-services.json",
+              "RelativeToolTip": "google-services.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-07T06:08:22.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "FcmToken.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Model\\Notification\\FcmToken.cs",
+              "RelativeDocumentMoniker": "Model\\Notification\\FcmToken.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Model\\Notification\\FcmToken.cs",
+              "RelativeToolTip": "Model\\Notification\\FcmToken.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T01:41:52.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "RequestFormPage.xaml",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\RequestFormPage.xaml",
+              "RelativeDocumentMoniker": "View\\RequestFormPage.xaml",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\RequestFormPage.xaml",
+              "RelativeToolTip": "View\\RequestFormPage.xaml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAhwCAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-07T03:06:36.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "SalaryDetailPage.xaml",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\SalaryDetailPage.xaml",
+              "RelativeDocumentMoniker": "View\\SalaryDetailPage.xaml",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\SalaryDetailPage.xaml",
+              "RelativeToolTip": "View\\SalaryDetailPage.xaml",
+              "ViewState": "AgIAABkAAAAAAAAAAAAswBsAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-07T04:21:12.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "NewsListPage.xaml",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\NewsListPage.xaml",
+              "RelativeDocumentMoniker": "View\\NewsListPage.xaml",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\NewsListPage.xaml",
+              "RelativeToolTip": "View\\NewsListPage.xaml",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-07T05:16:31.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "ReportSelectionPage.xaml",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\ReportSelectionPage.xaml",
+              "RelativeDocumentMoniker": "View\\ReportSelectionPage.xaml",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\ReportSelectionPage.xaml",
+              "RelativeToolTip": "View\\ReportSelectionPage.xaml",
+              "ViewState": "AgIAAB0AAAAAAAAAAADwvycAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-20T13:02:59.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "TopNotificationView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\Shared\\TopNotificationView.xaml.cs",
+              "RelativeDocumentMoniker": "View\\Shared\\TopNotificationView.xaml.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\Shared\\TopNotificationView.xaml.cs",
+              "RelativeToolTip": "View\\Shared\\TopNotificationView.xaml.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAqwFwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T02:42:30.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "TopNotificationView.xaml",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\Shared\\TopNotificationView.xaml",
+              "RelativeDocumentMoniker": "View\\Shared\\TopNotificationView.xaml",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\Shared\\TopNotificationView.xaml",
+              "RelativeToolTip": "View\\Shared\\TopNotificationView.xaml",
+              "ViewState": "AgIAACIAAAAAAAAAAAAQwDYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-13T13:02:49.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "Microsoft.Maui.Resizetizer.After.targets",
+              "DocumentMoniker": "C:\\Users\\PHONG\\.nuget\\packages\\microsoft.maui.resizetizer\\9.0.51\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\.nuget\\packages\\microsoft.maui.resizetizer\\9.0.51\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
+              "ToolTip": "C:\\Users\\PHONG\\.nuget\\packages\\microsoft.maui.resizetizer\\9.0.51\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\.nuget\\packages\\microsoft.maui.resizetizer\\9.0.51\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
+              "ViewState": "AgIAAGQCAAAAAAAAAAAkwHYCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-10-07T06:43:31.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\MainPage.xaml",
+              "RelativeDocumentMoniker": "View\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\MainPage.xaml",
+              "RelativeToolTip": "View\\MainPage.xaml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAEEAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-29T14:29:59.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "Training.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Model\\Training.cs",
+              "RelativeDocumentMoniker": "Model\\Training.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Model\\Training.cs",
+              "RelativeToolTip": "Model\\Training.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAmwKIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T04:41:51.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "TaskPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\TaskPage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\TaskPage.xaml.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\TaskPage.xaml.cs",
+              "RelativeToolTip": "View\\TaskPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T06:56:37.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "IWifiService.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Services\\Wifi\\IWifiService.cs",
+              "RelativeDocumentMoniker": "Services\\Wifi\\IWifiService.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Services\\Wifi\\IWifiService.cs",
+              "RelativeToolTip": "Services\\Wifi\\IWifiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T12:12:00.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "TimeAgoConverter.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Converters\\TimeAgoConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\TimeAgoConverter.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Converters\\TimeAgoConverter.cs",
+              "RelativeToolTip": "Converters\\TimeAgoConverter.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAIwC0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T14:05:14.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "CountToVisibilityConverter.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Converters\\CountToVisibilityConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\CountToVisibilityConverter.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Converters\\CountToVisibilityConverter.cs",
+              "RelativeToolTip": "Converters\\CountToVisibilityConverter.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAuwBQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T16:28:10.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "StringEqConverter.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Converters\\StringEqConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\StringEqConverter.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Converters\\StringEqConverter.cs",
+              "RelativeToolTip": "Converters\\StringEqConverter.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAuwBIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T06:15:54.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "SalaryDetailPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\SalaryDetailPage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\SalaryDetailPage.xaml.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\SalaryDetailPage.xaml.cs",
+              "RelativeToolTip": "View\\SalaryDetailPage.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T04:23:44.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "MainActivity.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Platforms\\Android\\MainActivity.cs",
+              "RelativeDocumentMoniker": "Platforms\\Android\\MainActivity.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Platforms\\Android\\MainActivity.cs",
+              "RelativeToolTip": "Platforms\\Android\\MainActivity.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAAwCMAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T06:03:17.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "NotificationBadge.xaml",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\Shared\\NotificationBadge.xaml",
+              "RelativeDocumentMoniker": "View\\Shared\\NotificationBadge.xaml",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\Shared\\NotificationBadge.xaml",
+              "RelativeToolTip": "View\\Shared\\NotificationBadge.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-13T02:58:44.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "NotificationBadge.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\Shared\\NotificationBadge.xaml.cs",
+              "RelativeDocumentMoniker": "View\\Shared\\NotificationBadge.xaml.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\Shared\\NotificationBadge.xaml.cs",
+              "RelativeToolTip": "View\\Shared\\NotificationBadge.xaml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAIwAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T17:58:09.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "NotificationBadge.xaml",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\Shared\\NotificationBadge.xaml",
+              "RelativeDocumentMoniker": "View\\Shared\\NotificationBadge.xaml",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\Shared\\NotificationBadge.xaml",
+              "RelativeToolTip": "View\\Shared\\NotificationBadge.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-12T17:58:00.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "WifiService.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Platforms\\Android\\WifiService.cs",
+              "RelativeDocumentMoniker": "Platforms\\Android\\WifiService.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Platforms\\Android\\WifiService.cs",
+              "RelativeToolTip": "Platforms\\Android\\WifiService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwBEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T12:12:30.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "UserResponse.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Model\\UserResponse.cs",
+              "RelativeDocumentMoniker": "Model\\UserResponse.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Model\\UserResponse.cs",
+              "RelativeToolTip": "Model\\UserResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T16:57:19.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "AndroidManifest.xml",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeDocumentMoniker": "Platforms\\Android\\AndroidManifest.xml",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeToolTip": "Platforms\\Android\\AndroidManifest.xml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-10-28T08:43:19.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "SalarySummaryPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\SalarySummaryPage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\SalarySummaryPage.xaml.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\SalarySummaryPage.xaml.cs",
+              "RelativeToolTip": "View\\SalarySummaryPage.xaml.cs",
+              "ViewState": "AgIAAMMAAAAAAAAAAIBZwPYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T04:20:55.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "SalarySummaryPage.xaml",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\SalarySummaryPage.xaml",
+              "RelativeDocumentMoniker": "View\\SalarySummaryPage.xaml",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\SalarySummaryPage.xaml",
+              "RelativeToolTip": "View\\SalarySummaryPage.xaml",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAowH0AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-07T04:20:48.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "ChangePasswordPage.xaml",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\ChangePasswordPage.xaml",
+              "RelativeDocumentMoniker": "View\\ChangePasswordPage.xaml",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\View\\ChangePasswordPage.xaml",
+              "RelativeToolTip": "View\\ChangePasswordPage.xaml",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAAwGwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-12T15:32:03.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "MainApplication.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Platforms\\Android\\MainApplication.cs",
+              "RelativeDocumentMoniker": "Platforms\\Android\\MainApplication.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Platforms\\Android\\MainApplication.cs",
+              "RelativeToolTip": "Platforms\\Android\\MainApplication.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T06:05:36.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "ServiceHelper.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Helpers\\ServiceHelper.cs",
+              "RelativeDocumentMoniker": "Helpers\\ServiceHelper.cs",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Helpers\\ServiceHelper.cs",
+              "RelativeToolTip": "Helpers\\ServiceHelper.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAowCIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T16:17:05.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "HRMApp.csproj",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\HRMApp.csproj",
+              "RelativeDocumentMoniker": "HRMApp.csproj",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\HRMApp.csproj",
+              "RelativeToolTip": "HRMApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-29T14:28:54.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "strings.xml",
+              "DocumentMoniker": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Platforms\\Android\\Resources\\values\\strings.xml",
+              "RelativeDocumentMoniker": "Platforms\\Android\\Resources\\values\\strings.xml",
+              "ToolTip": "C:\\Users\\PHONG\\Downloads\\Doantotnghiep\\HRM\\HRM_APP\\HRMApp\\Platforms\\Android\\Resources\\values\\strings.xml",
+              "RelativeToolTip": "Platforms\\Android\\Resources\\values\\strings.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-10-07T06:09:09.319Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

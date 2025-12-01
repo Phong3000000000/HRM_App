@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HRMApp.View.ProfilePage"
+             Title="Tài khoản"
+             BackgroundColor="#F5F6FA">
+
+    <!-- SỬA Ở ĐÂY: Bọc nội dung trong một Grid -->
+    <Grid>
+        <!-- Nội dung trang hiện tại của bạn nằm ở đây -->
+        <ScrollView>
+            <VerticalStackLayout Padding="20" Spacing="20">
+                <Grid>
+                    <!-- Fallback nếu không có avatar_url -->
+                    <Border x:Name="AvatarBorder"
+                            WidthRequest="100"
+                            HeightRequest="100"
+                            StrokeShape="Ellipse"
+                            BackgroundColor="#1568b2"
+                            IsVisible="True">
+                        <Label x:Name="AvatarLabel"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               TextColor="White"
+                               FontSize="36"
+                               FontAttributes="Bold"/>
+                    </Border>
+
+                    <!-- Hiển thị ảnh nếu có avatar_url -->
+                    <Image x:Name="AvatarImage"
+                           WidthRequest="100"
+                           HeightRequest="100"
+                           Aspect="AspectFill"
+                           IsVisible="False">
+                        <Image.Clip>
+                            <EllipseGeometry Center="50,50" RadiusX="50" RadiusY="50" />
+                        </Image.Clip>
+                    </Image>
+                </Grid>
+
+                <!-- Họ tên -->
+                <Label x:Name="FullnameLabel"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       TextColor="#222"
+                       HorizontalOptions="Center"/>
+
+                <!-- Khối thông tin -->
+                <Grid ColumnDefinitions="Auto,*" RowDefinitions="Auto, Auto, Auto, Auto, Auto,Auto,Auto,Auto,Auto,Auto" ColumnSpacing="10">
+                    <Label Text="Tài khoản:" Grid.Row="0" FontAttributes="Bold"/>
+                    <Label x:Name="UsernameLabel" Grid.Row="0" Grid.Column="1" TextColor="#444"/>
+
+                    <Label Text="Phòng ban:" Grid.Row="1" FontAttributes="Bold"/>
+                    <Label x:Name="DepartmentLabel" Grid.Row="1" Grid.Column="1" TextColor="#444"/>
+
+                    <Label Text="Vị trí:" Grid.Row="2" FontAttributes="Bold"/>
+                    <Label x:Name="PositionLabel" Grid.Row="2" Grid.Column="1" TextColor="#444"/>
+
+                    <Label Text="Trạng thái:" Grid.Row="3" FontAttributes="Bold"/>
+                    <Label x:Name="StatusLabel" Grid.Row="3" Grid.Column="1" TextColor="#444"/>
+
+                    <Label Text="Ngày vào làm:" Grid.Row="4" FontAttributes="Bold"/>
+                    <Label x:Name="HiredateLabel" Grid.Row="4" Grid.Column="1" TextColor="#444"/>
+
+                    <Label Text="Mã NV:" Grid.Row="5" FontAttributes="Bold"/>
+                    <Label x:Name="Code" Grid.Row="5" Grid.Column="1" TextColor="#444"/>
+
+                    <Label Text="Vai trò:" Grid.Row="6" FontAttributes="Bold"/>
+                    <Label x:Name="RoleLabel" Grid.Row="6" Grid.Column="1" TextColor="#444"/>
+
+                    <Label Text="Email:" Grid.Row="7" FontAttributes="Bold"/>
+                    <Label x:Name="EmailLabel" Grid.Row="7" Grid.Column="1" TextColor="#444"/>
+
+                    <Label Text="SĐT:" Grid.Row="8" FontAttributes="Bold"/>
+                    <Label x:Name="PhoneLabel" Grid.Row="8" Grid.Column="1" TextColor="#444"/>
+
+                    <Label Text="Địa chỉ:" Grid.Row="9" FontAttributes="Bold"/>
+                    <Label x:Name="AddressLabel" Grid.Row="9" Grid.Column="1" TextColor="#444"/>
+                </Grid>
+                <!--<Button Text="Xuất thông tin"
+            BackgroundColor="#1568b2"
+            TextColor="White"
+            WidthRequest="200"
+            Clicked="OnExportProfileClicked"/>-->
+
+                <Button Text="Đổi mật khẩu"
+                        BackgroundColor="#F9A825"
+                        TextColor="White"
+                        WidthRequest="200"
+                        Clicked="OnChangePasswordPageClicked"/>
+                <Button Text="Đăng xuất"
+                        BackgroundColor="#E53935"
+                        TextColor="White"
+                        WidthRequest="200"
+                        Clicked="OnLogoutClicked"/>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!-- Thông báo sẽ được tự động thêm vào Grid này bởi DeviceNotificationService -->
+    </Grid>
+</ContentPage>

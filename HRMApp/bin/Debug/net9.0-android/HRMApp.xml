@@ -1,0 +1,476 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HRMApp</name>
+    </assembly>
+    <members>
+        <member name="E:HRMApp.Services.Notification.ISignalRService.OnNotificationUpdated">
+            <summary>
+            Kích hoạt khi một thông báo bị SỬA (Update)
+            </summary>
+        </member>
+        <member name="E:HRMApp.Services.Notification.ISignalRService.OnNotificationDeleted">
+            <summary>
+            Kích hoạt khi một thông báo bị XÓA (Delete)
+            </summary>
+        </member>
+        <member name="T:HRMApp.ViewModels.NotificationDetailViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:HRMApp.ViewModels.NotificationDetailViewModel.Notification">
+            <inheritdoc cref="F:HRMApp.ViewModels.NotificationDetailViewModel.notification"/>
+        </member>
+        <member name="M:HRMApp.ViewModels.NotificationDetailViewModel.OnNotificationChanged(HRMApp.Model.Notification.SignalRNotification)">
+            <summary>Executes the logic for when <see cref="P:HRMApp.ViewModels.NotificationDetailViewModel.Notification"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:HRMApp.ViewModels.NotificationDetailViewModel.Notification"/> is changed.</remarks>
+        </member>
+        <member name="T:HRMApp.ViewModels.NotificationViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="F:HRMApp.ViewModels.NotificationViewModel.markAsReadCommand">
+            <summary>The backing field for <see cref="P:HRMApp.ViewModels.NotificationViewModel.MarkAsReadCommand"/>.</summary>
+        </member>
+        <member name="P:HRMApp.ViewModels.NotificationViewModel.MarkAsReadCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:HRMApp.ViewModels.NotificationViewModel.MarkAsReadAsync(HRMApp.Model.Notification.SignalRNotification)"/>.</summary>
+        </member>
+        <member name="F:HRMApp.ViewModels.NotificationViewModel.viewNotificationCommand">
+            <summary>The backing field for <see cref="P:HRMApp.ViewModels.NotificationViewModel.ViewNotificationCommand"/>.</summary>
+        </member>
+        <member name="P:HRMApp.ViewModels.NotificationViewModel.ViewNotificationCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:HRMApp.ViewModels.NotificationViewModel.ViewNotificationAsync(HRMApp.Model.Notification.SignalRNotification)"/>.</summary>
+        </member>
+        <member name="T:HRMApp.ViewModels.ScheduleViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:HRMApp.ViewModels.ScheduleViewModel.WeekRange">
+            <inheritdoc cref="F:HRMApp.ViewModels.ScheduleViewModel.weekRange"/>
+        </member>
+        <member name="P:HRMApp.ViewModels.ScheduleViewModel.Days">
+            <inheritdoc cref="F:HRMApp.ViewModels.ScheduleViewModel.days"/>
+        </member>
+        <member name="P:HRMApp.ViewModels.ScheduleViewModel.IsLoading">
+            <inheritdoc cref="F:HRMApp.ViewModels.ScheduleViewModel.isLoading"/>
+        </member>
+        <member name="P:HRMApp.ViewModels.ScheduleViewModel.SelectedDate">
+            <inheritdoc cref="F:HRMApp.ViewModels.ScheduleViewModel.selectedDate"/>
+        </member>
+        <member name="M:HRMApp.ViewModels.ScheduleViewModel.OnSelectedDateChanged(System.DateTime)">
+            <summary>Executes the logic for when <see cref="P:HRMApp.ViewModels.ScheduleViewModel.SelectedDate"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:HRMApp.ViewModels.ScheduleViewModel.SelectedDate"/> is changed.</remarks>
+        </member>
+        <member name="F:HRMApp.ViewModels.ScheduleViewModel.nextWeekCommand">
+            <summary>The backing field for <see cref="P:HRMApp.ViewModels.ScheduleViewModel.NextWeekCommand"/>.</summary>
+        </member>
+        <member name="P:HRMApp.ViewModels.ScheduleViewModel.NextWeekCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:HRMApp.ViewModels.ScheduleViewModel.NextWeek"/>.</summary>
+        </member>
+        <member name="F:HRMApp.ViewModels.ScheduleViewModel.prevWeekCommand">
+            <summary>The backing field for <see cref="P:HRMApp.ViewModels.ScheduleViewModel.PrevWeekCommand"/>.</summary>
+        </member>
+        <member name="P:HRMApp.ViewModels.ScheduleViewModel.PrevWeekCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:HRMApp.ViewModels.ScheduleViewModel.PrevWeek"/>.</summary>
+        </member>
+        <member name="F:HRMApp.ViewModels.ScheduleViewModel.goToTodayCommand">
+            <summary>The backing field for <see cref="P:HRMApp.ViewModels.ScheduleViewModel.GoToTodayCommand"/>.</summary>
+        </member>
+        <member name="P:HRMApp.ViewModels.ScheduleViewModel.GoToTodayCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:HRMApp.ViewModels.ScheduleViewModel.GoToToday"/>.</summary>
+        </member>
+        <member name="T:HRMApp.ViewModel.QuestionViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:HRMApp.ViewModel.QuestionViewModel.SelectedAnswer">
+            <inheritdoc cref="F:HRMApp.ViewModel.QuestionViewModel.selectedAnswer"/>
+        </member>
+        <member name="P:HRMApp.ViewModel.QuestionViewModel.IsReadOnly">
+            <inheritdoc cref="F:HRMApp.ViewModel.QuestionViewModel.isReadOnly"/>
+        </member>
+        <member name="P:HRMApp.ViewModel.QuestionViewModel.ResultColor">
+            <inheritdoc cref="F:HRMApp.ViewModel.QuestionViewModel.resultColor"/>
+        </member>
+        <member name="P:HRMApp.ViewModel.QuestionViewModel.ResultIcon">
+            <inheritdoc cref="F:HRMApp.ViewModel.QuestionViewModel.resultIcon"/>
+        </member>
+        <member name="P:HRMApp.ViewModel.QuestionViewModel.ResultText">
+            <inheritdoc cref="F:HRMApp.ViewModel.QuestionViewModel.resultText"/>
+        </member>
+        <member name="P:HRMApp.ViewModel.QuestionViewModel.ResultTextColor">
+            <inheritdoc cref="F:HRMApp.ViewModel.QuestionViewModel.resultTextColor"/>
+        </member>
+        <member name="M:HRMApp.ViewModel.QuestionViewModel.OnSelectedAnswerChanged(System.String,System.String)">
+            <summary>Executes the logic for when <see cref="P:HRMApp.ViewModel.QuestionViewModel.SelectedAnswer"/> just changed.</summary>
+            <param name="oldValue">The previous property value that was replaced.</param>
+            <param name="newValue">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:HRMApp.ViewModel.QuestionViewModel.SelectedAnswer"/> is changed.</remarks>
+        </member>
+        <member name="T:HRMApp.ViewModel.TrainingDetailViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:HRMApp.ViewModel.TrainingDetailViewModel.Course">
+            <inheritdoc cref="F:HRMApp.ViewModel.TrainingDetailViewModel.course"/>
+        </member>
+        <member name="P:HRMApp.ViewModel.TrainingDetailViewModel.Questions">
+            <inheritdoc cref="F:HRMApp.ViewModel.TrainingDetailViewModel.questions"/>
+        </member>
+        <member name="P:HRMApp.ViewModel.TrainingDetailViewModel.IsLoading">
+            <inheritdoc cref="F:HRMApp.ViewModel.TrainingDetailViewModel.isLoading"/>
+        </member>
+        <member name="P:HRMApp.ViewModel.TrainingDetailViewModel.IsReviewMode">
+            <inheritdoc cref="F:HRMApp.ViewModel.TrainingDetailViewModel.isReviewMode"/>
+        </member>
+        <member name="P:HRMApp.ViewModel.TrainingDetailViewModel.ScoreSummary">
+            <inheritdoc cref="F:HRMApp.ViewModel.TrainingDetailViewModel.scoreSummary"/>
+        </member>
+        <member name="F:HRMApp.ViewModel.TrainingDetailViewModel.submitCommand">
+            <summary>The backing field for <see cref="P:HRMApp.ViewModel.TrainingDetailViewModel.SubmitCommand"/>.</summary>
+        </member>
+        <member name="P:HRMApp.ViewModel.TrainingDetailViewModel.SubmitCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:HRMApp.ViewModel.TrainingDetailViewModel.Submit"/>.</summary>
+        </member>
+        <member name="T:HRMApp.ViewModel.TrainingListViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:HRMApp.ViewModel.TrainingListViewModel.Courses">
+            <inheritdoc cref="F:HRMApp.ViewModel.TrainingListViewModel.courses"/>
+        </member>
+        <member name="P:HRMApp.ViewModel.TrainingListViewModel.IsLoading">
+            <inheritdoc cref="F:HRMApp.ViewModel.TrainingListViewModel.isLoading"/>
+        </member>
+        <member name="F:HRMApp.ViewModel.TrainingListViewModel.loadDataCommand">
+            <summary>The backing field for <see cref="P:HRMApp.ViewModel.TrainingListViewModel.LoadDataCommand"/>.</summary>
+        </member>
+        <member name="P:HRMApp.ViewModel.TrainingListViewModel.LoadDataCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:HRMApp.ViewModel.TrainingListViewModel.LoadData"/>.</summary>
+        </member>
+        <member name="F:HRMApp.ViewModel.TrainingListViewModel.goToDetailCommand">
+            <summary>The backing field for <see cref="P:HRMApp.ViewModel.TrainingListViewModel.GoToDetailCommand"/>.</summary>
+        </member>
+        <member name="P:HRMApp.ViewModel.TrainingListViewModel.GoToDetailCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:HRMApp.ViewModel.TrainingListViewModel.GoToDetail(HRMApp.Model.Training.CourseDto)"/>.</summary>
+        </member>
+        <member name="T:HRMApp.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Notification">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Notification" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedAnswer">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedAnswer" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsReadOnly">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsReadOnly" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ResultColor">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ResultColor" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ResultIcon">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ResultIcon" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ResultText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ResultText" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ResultTextColor">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ResultTextColor" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.WeekRange">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "WeekRange" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Days">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Days" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsLoading">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsLoading" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedDate">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedDate" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Course">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Course" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Questions">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Questions" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsReviewMode">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsReviewMode" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ScoreSummary">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ScoreSummary" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Courses">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Courses" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Notification">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Notification" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedAnswer">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedAnswer" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsReadOnly">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsReadOnly" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ResultColor">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ResultColor" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ResultIcon">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ResultIcon" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ResultText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ResultText" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ResultTextColor">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ResultTextColor" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.WeekRange">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "WeekRange" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Days">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Days" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsLoading">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsLoading" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedDate">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedDate" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Course">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Course" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Questions">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Questions" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsReviewMode">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsReviewMode" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ScoreSummary">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ScoreSummary" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Courses">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Courses" generated properties.</summary>
+        </member>
+        <member name="T:Refit.Implementation.Generated">
+            <inheritdoc />
+        </member>
+        <member name="T:Refit.Implementation.Generated.HRMAppServicesApiIHrmApi">
+            <inheritdoc />
+        </member>
+        <member name="P:Refit.Implementation.Generated.HRMAppServicesApiIHrmApi.Client">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiIHrmApi.#ctor(System.Net.Http.HttpClient,Refit.IRequestBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiIHrmApi.LoginAsync(HRMApp.Model.LoginRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiIHrmApi.RegisterAsync(HRMApp.Model.RegisterRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiIHrmApi.TestProtectedAsync">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiIHrmApi.ChangePasswordAsync(HRMApp.Model.ChangePasswordRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiIHrmApi.GetProfileReportDownloadUrl(System.Guid,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiIHrmApi.GetSalariesAsync(System.String,System.Int32,System.Int32,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiIHrmApi.GetPayslipReportDownloadUrl(System.Guid,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiIHrmApi.HRMApp#Services#Api#IHrmApi#LoginAsync(HRMApp.Model.LoginRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiIHrmApi.HRMApp#Services#Api#IHrmApi#RegisterAsync(HRMApp.Model.RegisterRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiIHrmApi.HRMApp#Services#Api#IHrmApi#TestProtectedAsync">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiIHrmApi.HRMApp#Services#Api#IHrmApi#ChangePasswordAsync(HRMApp.Model.ChangePasswordRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiIHrmApi.HRMApp#Services#Api#IHrmApi#GetProfileReportDownloadUrl(System.Guid,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiIHrmApi.HRMApp#Services#Api#IHrmApi#GetSalariesAsync(System.String,System.Int32,System.Int32,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiIHrmApi.HRMApp#Services#Api#IHrmApi#GetPayslipReportDownloadUrl(System.Guid,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Refit.Implementation.Generated.HRMAppServicesApiILocalApi">
+            <inheritdoc />
+        </member>
+        <member name="P:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.Client">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.#ctor(System.Net.Http.HttpClient,Refit.IRequestBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.CheckinAsync(HRMApp.Services.Api.CheckinRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.CheckoutAsync(HRMApp.Services.Api.CheckoutRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.GetAttendanceStatusAsync(System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.GetPayrollPerformanceAsync(System.Guid,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.GetPayrollPerformanceRawAsync(System.Guid,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.GetPayrollDailyAsync(System.Guid,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.CreateRequestAsync(HRMApp.Services.Api.CreateRequestDto)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.GetRequestsAsync(System.String,System.Int32,System.Int32,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.ProcessRequestAsync(System.Guid,HRMApp.Services.Api.ProcessRequestDto)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.SaveTokenAsync(HRMApp.Model.Notification.FcmToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.GetNotificationsAsync(System.String,System.Int32,System.Int32,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.MarkNotificationAsReadAsync(System.Guid,System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.UpdateDeviceStatusAsync(HRMApp.Model.Notification.DeviceStatusUpdateRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.GetAllDevicesAsync">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.GetOpenDevicesAsync">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.GetClosedDevicesAsync">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.CheckDeviceStatusAsync(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.GetCoursesAsync(System.String,System.Nullable{System.Guid},System.Int32,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.GetQuestionsAsync(System.Guid,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.SubmitBulkAnswersAsync(HRMApp.Model.Training.BulkSubmitRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.GetScoreAsync(System.Guid,System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.GetCourseResultsAsync(System.Guid,System.Guid,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.GetWorkSchedulesAsync(System.Nullable{System.Guid},System.String,System.String,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.HRMApp#Services#Api#ILocalApi#CheckinAsync(HRMApp.Services.Api.CheckinRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.HRMApp#Services#Api#ILocalApi#CheckoutAsync(HRMApp.Services.Api.CheckoutRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.HRMApp#Services#Api#ILocalApi#GetAttendanceStatusAsync(System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.HRMApp#Services#Api#ILocalApi#GetPayrollPerformanceAsync(System.Guid,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.HRMApp#Services#Api#ILocalApi#GetPayrollPerformanceRawAsync(System.Guid,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.HRMApp#Services#Api#ILocalApi#GetPayrollDailyAsync(System.Guid,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.HRMApp#Services#Api#ILocalApi#CreateRequestAsync(HRMApp.Services.Api.CreateRequestDto)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.HRMApp#Services#Api#ILocalApi#GetRequestsAsync(System.String,System.Int32,System.Int32,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.HRMApp#Services#Api#ILocalApi#ProcessRequestAsync(System.Guid,HRMApp.Services.Api.ProcessRequestDto)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.HRMApp#Services#Api#ILocalApi#SaveTokenAsync(HRMApp.Model.Notification.FcmToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.HRMApp#Services#Api#ILocalApi#GetNotificationsAsync(System.String,System.Int32,System.Int32,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.HRMApp#Services#Api#ILocalApi#MarkNotificationAsReadAsync(System.Guid,System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.HRMApp#Services#Api#ILocalApi#UpdateDeviceStatusAsync(HRMApp.Model.Notification.DeviceStatusUpdateRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.HRMApp#Services#Api#ILocalApi#GetAllDevicesAsync">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.HRMApp#Services#Api#ILocalApi#GetOpenDevicesAsync">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.HRMApp#Services#Api#ILocalApi#GetClosedDevicesAsync">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.HRMApp#Services#Api#ILocalApi#CheckDeviceStatusAsync(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.HRMApp#Services#Api#ILocalApi#GetCoursesAsync(System.String,System.Nullable{System.Guid},System.Int32,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.HRMApp#Services#Api#ILocalApi#GetQuestionsAsync(System.Guid,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.HRMApp#Services#Api#ILocalApi#SubmitBulkAnswersAsync(HRMApp.Model.Training.BulkSubmitRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.HRMApp#Services#Api#ILocalApi#GetScoreAsync(System.Guid,System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.HRMApp#Services#Api#ILocalApi#GetCourseResultsAsync(System.Guid,System.Guid,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.HRMAppServicesApiILocalApi.HRMApp#Services#Api#ILocalApi#GetWorkSchedulesAsync(System.Nullable{System.Guid},System.String,System.String,System.Int32)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

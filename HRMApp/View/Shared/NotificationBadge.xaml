@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HRMApp.View.Shared.NotificationBadge">
+    
+    <Grid>
+        <!-- Icon thông báo -->
+        <Label Text="&#xf0f3;"
+               FontFamily="FontAwesome"
+               FontSize="24"
+               TextColor="White"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+        
+        <!-- Badge số đếm -->
+        <Border IsVisible="{Binding UnreadCount, Converter={StaticResource GreaterThanZeroConverter}}"
+                BackgroundColor="Red"
+                StrokeShape="Ellipse"
+                WidthRequest="{Binding BadgeSize}"
+                HeightRequest="{Binding BadgeSize}"
+                HorizontalOptions="End"
+                VerticalOptions="Start"
+                Margin="0,-5,-5,0">
+            <Label Text="{Binding BadgeText}"
+                   TextColor="White"
+                   FontSize="10"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+        </Border>
+    </Grid>
+</ContentView>

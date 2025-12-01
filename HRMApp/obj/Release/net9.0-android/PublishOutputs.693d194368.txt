@@ -1,0 +1,4 @@
+C:\Users\PHONG\Downloads\HRM_APP\HRMApp\bin\Release\net9.0-android\publish\com.companyname.hrmapp-Signed.apk
+C:\Users\PHONG\Downloads\HRM_APP\HRMApp\bin\Release\net9.0-android\publish\com.companyname.hrmapp.apk
+C:\Users\PHONG\Downloads\HRM_APP\HRMApp\bin\Release\net9.0-android\publish\com.companyname.hrmapp-Signed.aab
+C:\Users\PHONG\Downloads\HRM_APP\HRMApp\bin\Release\net9.0-android\publish\_Microsoft.Android.Resource.Designer.dll

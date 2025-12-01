@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:HRMApp.ViewModels"
+             xmlns:converters="clr-namespace:HRMApp.Converters" 
+             x:Class="HRMApp.View.SchedulePage"
+             Title="Lịch làm việc"
+             BackgroundColor="#F5F6FA">
+
+    <ContentPage.Resources>
+        <Color x:Key="BrandBlue">#1568b2</Color>
+        <Color x:Key="TextDark">#2F3342</Color>
+        <Color x:Key="TextGray">#7A8190</Color>
+
+        <converters:InverseBooleanConverter x:Key="InvertedBoolConverter" />
+        <converters:BoolToBackgroundConverter x:Key="BoolToBackgroundConverter" />
+        <converters:BoolToBorderConverter x:Key="BoolToBorderConverter" />
+        <converters:RadiusToShapeConverter x:Key="RadiusToShapeConverter" />
+
+        <Style TargetType="Label" x:Key="DayHeaderStyle">
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="TextColor" Value="{StaticResource TextDark}"/>
+        </Style>
+
+        <Style TargetType="Label" x:Key="ShiftNameStyle">
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="LineBreakMode" Value="WordWrap"/>
+        </Style>
+
+        <Style TargetType="Label" x:Key="ShiftStatusStyle">
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Margin" Value="0,2,0,0"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <!-- ✅ SỬA: Thêm một row cho DatePicker -->
+    <Grid RowDefinitions="Auto, Auto, *">
+
+        <!-- Header với navigation tuần -->
+        <Grid Grid.Row="0" Padding="16" BackgroundColor="White" RowDefinitions="Auto,Auto" ColumnDefinitions="Auto,*,Auto">
+            <ImageButton Grid.Column="0" Source="chevron_left.png" 
+                         BackgroundColor="Transparent" 
+                         HeightRequest="40" WidthRequest="40"
+                         Command="{Binding PrevWeekCommand}"/>
+
+            <Label Grid.Column="1" Text="{Binding WeekRange}" 
+                   HorizontalOptions="Center" VerticalOptions="Center" 
+                   FontSize="16" FontAttributes="Bold" TextColor="{StaticResource TextDark}"/>
+
+            <ImageButton Grid.Column="2" Source="chevron_right.png" 
+                         BackgroundColor="Transparent" 
+                         HeightRequest="40" WidthRequest="40"
+                         Command="{Binding NextWeekCommand}"/>
+
+            <Label Grid.Row="1" Grid.ColumnSpan="3" 
+                   Text="{Binding WeekRange}" 
+                   HorizontalOptions="Center" FontSize="13" 
+                   TextColor="{StaticResource TextGray}" Margin="0,-4,0,0"/>
+        </Grid>
+
+        <!-- ✅ THÊM: DatePicker Section -->
+        <Frame Grid.Row="1" BackgroundColor="White" CornerRadius="12" HasShadow="False" 
+               BorderColor="#E0E0E0" Margin="16,8,16,0" Padding="16">
+            <Grid ColumnDefinitions="Auto,*,Auto">
+                <!-- Icon lịch -->
+                <Label Grid.Column="0" Text="📅" FontSize="20" VerticalOptions="Center"/>
+                
+                <!-- DatePicker với styling -->
+                <Border Grid.Column="1" Stroke="#E0E0E0" StrokeShape="RoundRectangle 8" 
+                        BackgroundColor="#F8F9FA" Margin="12,0" Padding="12,8">
+                    <DatePicker x:Name="WeekDatePicker"
+                                Date="{Binding SelectedDate, Mode=TwoWay}"
+                                Format="dd/MM/yyyy"
+                                FontSize="14"
+                                TextColor="{StaticResource TextDark}"
+                                BackgroundColor="Transparent"/>
+                </Border>
+                
+                <!-- Nút "Hôm nay" -->
+                <Button Grid.Column="2" Text="Hôm nay" 
+                        FontSize="12" 
+                        BackgroundColor="{StaticResource BrandBlue}"
+                        TextColor="White"
+                        CornerRadius="6"
+                        Padding="12,6"
+                        Command="{Binding GoToTodayCommand}"/>
+            </Grid>
+        </Frame>
+
+        <!-- ActivityIndicator -->
+        <ActivityIndicator Grid.Row="2" IsRunning="{Binding IsLoading}" 
+                           IsVisible="{Binding IsLoading}"
+                           HorizontalOptions="Center" VerticalOptions="Center" 
+                           Color="{StaticResource BrandBlue}"/>
+
+        <!-- CollectionView với lịch làm việc -->
+        <CollectionView Grid.Row="2" 
+                        ItemsSource="{Binding Days}" 
+                        SelectionMode="None" 
+                        Margin="0,8,0,0"
+                        IsVisible="{Binding IsLoading, Converter={StaticResource InvertedBoolConverter}}">
+
+            <!-- ✅ SỬA: Thay đổi phần hiển thị ngày trong CollectionView.ItemTemplate -->
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <!-- ✅ SỬA: Thay Frame bằng Border để tùy chỉnh được -->
+                    <Border BackgroundColor="{Binding IsSelected, Converter={StaticResource BoolToBackgroundConverter}}"
+                Stroke="{Binding IsSelected, Converter={StaticResource BoolToBorderConverter}}"
+                StrokeThickness="{Binding SelectedBorderThickness}"
+                StrokeShape="{Binding SelectedBorderRadius, Converter={StaticResource RadiusToShapeConverter}}"
+                Margin="16,0,16,12" 
+                Padding="12">
+
+                        <VerticalStackLayout Spacing="8">
+
+                            <HorizontalStackLayout Spacing="8" HorizontalOptions="Start">
+                                <Label Text="{Binding DayOfWeek}" Style="{StaticResource DayHeaderStyle}"/>
+                                <Label Text="{Binding Date}" FontSize="14" TextColor="{StaticResource TextGray}" VerticalOptions="Center"/>
+
+                                <!-- ✅ THÊM: Border indicator tùy chỉnh cho ngày được chọn -->
+                                <!--<Border IsVisible="{Binding IsSelected}"
+                            BackgroundColor="{Binding SelectedBorderColor}"
+                            WidthRequest="14"
+                            HeightRequest="14"
+                            StrokeShape="RoundRectangle 14"
+                            VerticalOptions="Center"
+                            HorizontalOptions="End"
+                            Margin="8,0,0,0"/>-->
+                            </HorizontalStackLayout>
+
+                            <CollectionView ItemsSource="{Binding Shifts}" SelectionMode="None">
+                                <CollectionView.ItemsLayout>
+                                    <LinearItemsLayout Orientation="Horizontal" ItemSpacing="10"/>
+                                </CollectionView.ItemsLayout>
+
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Border Stroke="{Binding BorderColor}" 
+                                    StrokeShape="RoundRectangle 8"
+                                    BackgroundColor="{Binding BgColor}"
+                                    Padding="12,8"
+                                    MinimumWidthRequest="150">
+
+                                            <VerticalStackLayout>
+                                                <Label Text="{Binding ShiftName}" 
+                                           Style="{StaticResource ShiftNameStyle}" 
+                                           TextColor="{Binding ShiftTextColor}"/>
+
+                                                <Label Text="{Binding Status}" 
+                                           Style="{StaticResource ShiftStatusStyle}" 
+                                           TextColor="{Binding StatusTextColor}"/>
+                                            </VerticalStackLayout>
+
+                                        </Border>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+
+                        </VerticalStackLayout>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
+    </Grid>
+</ContentPage>

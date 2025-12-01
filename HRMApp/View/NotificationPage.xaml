@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:HRMApp.Model.Notification"
+             xmlns:converters="clr-namespace:HRMApp.Converters"
+             xmlns:viewModels="clr-namespace:HRMApp.ViewModels"
+             x:Class="HRMApp.View.NotificationPage"
+             Title="Thông báo"
+             BackgroundColor="#F5F6FA">
+
+    <ContentPage.Resources>
+        <Color x:Key="BrandBlue">#1568b2</Color>
+        <converters:InverseBooleanConverter x:Key="InverseBooleanConverter" />
+    </ContentPage.Resources>
+    <Grid>
+        <Grid RowDefinitions="Auto, Auto, *">
+
+            <Label Grid.Row="0" Text="Thông báo" FontSize="24" FontAttributes="Bold" Padding="15,15,15,0" TextColor="#333"/>
+
+            <Border Grid.Row="1" Margin="15,10" Padding="10" BackgroundColor="White" StrokeShape="RoundRectangle 10" StrokeThickness="0">
+                <VerticalStackLayout Spacing="10">
+
+                    <SearchBar Placeholder="Tìm kiếm thông báo..." 
+                Text="{Binding SearchText}"
+                SearchCommand="{Binding LoadNotificationsCommand}" 
+                BackgroundColor="#F5F6FA"
+                TextColor="Black"
+                PlaceholderColor="Gray"/>
+
+                    <Grid ColumnDefinitions="*, Auto" RowDefinitions="Auto, Auto" RowSpacing="10">
+
+                        <Picker Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                 Title="Chọn loại thông báo"
+                 ItemsSource="{Binding FilterTypes}"
+                 SelectedItem="{Binding SelectedFilterType}"
+                 BackgroundColor="#F5F6FA"
+                 TitleColor="Gray"
+                 TextColor="Black" />
+
+                        <HorizontalStackLayout Grid.Row="1" Grid.Column="0" Spacing="8" VerticalOptions="Center">
+                            <CheckBox IsChecked="{Binding IsShowUnreadOnly}" Color="{StaticResource BrandBlue}"/>
+                            <Label Text="Chỉ chưa đọc" VerticalOptions="Center" TextColor="#555" FontSize="13"/>
+                        </HorizontalStackLayout>
+
+                        <Button Grid.Row="1" Grid.Column="1" 
+                 Command="{Binding ToggleSortCommand}"
+                 Text="{Binding IsSortDescending, Converter={StaticResource InverseBooleanConverter}, ConverterParameter='Mới nhất|Cũ nhất'}" 
+                 FontSize="11"
+                 HeightRequest="36"
+                 Padding="10,0"
+                 BackgroundColor="#EAF2FF"
+                 TextColor="{StaticResource BrandBlue}"
+                 CornerRadius="8">
+                            <Button.Triggers>
+                                <DataTrigger TargetType="Button" Binding="{Binding IsSortDescending}" Value="True">
+                                    <Setter Property="Text" Value="⬇️ Mới nhất" />
+                                </DataTrigger>
+                                <DataTrigger TargetType="Button" Binding="{Binding IsSortDescending}" Value="False">
+                                    <Setter Property="Text" Value="⬆️ Cũ nhất" />
+                                </DataTrigger>
+                            </Button.Triggers>
+                        </Button>
+                    </Grid>
+                </VerticalStackLayout>
+            </Border>
+
+            <RefreshView Grid.Row="2" 
+                  Command="{Binding RefreshCommand}"
+                  IsRefreshing="{Binding IsRefreshing}">
+                <CollectionView ItemsSource="{Binding FilteredNotifications}"
+                         SelectionMode="Single"
+                         EmptyView="Không tìm thấy thông báo nào.">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:SignalRNotification">
+                            <Frame Padding="15" Margin="15,6" CornerRadius="12" BorderColor="Transparent" HasShadow="False" BackgroundColor="White">
+                                <Grid ColumnDefinitions="Auto, *, Auto">
+                                    <Border Grid.Column="0"
+                                     WidthRequest="40" HeightRequest="40" 
+                                     BackgroundColor="#EAF2FF" 
+                                     StrokeShape="Ellipse"
+                                     VerticalOptions="Center"
+                                     Margin="0,0,12,0">
+                                        <Label Text="&#xf0f3;"
+                                        FontFamily="FontAwesome"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center"
+                                        FontSize="18"
+                                        TextColor="{StaticResource BrandBlue}"/>
+                                    </Border>
+
+                                    <VerticalStackLayout Grid.Column="1" Spacing="4">
+                                        <Label Text="{Binding Title}" FontAttributes="Bold" FontSize="15" TextColor="#333" LineBreakMode="TailTruncation"/>
+                                        <Label Text="{Binding Content}" FontSize="13" TextColor="#666" MaxLines="2" LineBreakMode="TailTruncation" />
+                                        <Label Text="{Binding CreatedAt, Converter={StaticResource TimeAgoConverter}}" 
+                                           FontSize="11" 
+                                           TextColor="#999" />
+                                    </VerticalStackLayout>
+                                    <Grid Grid.Column="2" 
+                                   RowDefinitions="Auto, *" 
+                                   HorizontalOptions="End"
+                                   MinimumWidthRequest="60"
+                                   Margin="0,0,0,0">
+                                        <BoxView Grid.Row="0"
+                                          Color="Red"
+                                          BackgroundColor="Transparent"
+                                          WidthRequest="14"
+                                          HeightRequest="14"
+                                          CornerRadius="14"
+                                          HorizontalOptions="End"
+                                          VerticalOptions="Start"
+                                          IsVisible="{Binding IsRead, Converter={StaticResource InverseBooleanConverter}}" />
+
+                                        <Border Grid.Row="1"
+                                         BackgroundColor="#F0F0F0" 
+                                         StrokeShape="RoundRectangle 4" 
+                                         Padding="6,2" 
+                                         HorizontalOptions="End"
+                                         VerticalOptions="End">
+                                            <Label Text="{Binding Type}"
+                                            TextColor="#555"
+                                            FontSize="10"
+                                            FontAttributes="Bold"
+                                            HorizontalOptions="Center"/>
+                                        </Border>
+
+                                    </Grid>
+                                </Grid>
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer 
+                                 Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:NotificationViewModel}}, Path=ViewNotificationCommand}"
+                                 CommandParameter="{Binding .}" />
+                                </Frame.GestureRecognizers>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </RefreshView>
+
+            <!--<ActivityIndicator Grid.Row="2" 
+                        IsRunning="{Binding IsLoading}" 
+                        IsVisible="{Binding IsLoading}"
+                        Color="{StaticResource BrandBlue}"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center"/>-->
+        </Grid>
+    </Grid>
+   
+</ContentPage>

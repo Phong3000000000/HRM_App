@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HRMApp.View.MainPage"
+             BackgroundColor="#F5F6FA"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Resources>
+        <!-- màu & style -->
+        <Color x:Key="BrandBlue">#1568b2</Color>
+        <Color x:Key="TileBg">#FFFFFF</Color>
+        <Color x:Key="TabText">#7A8190</Color>
+        <Color x:Key="HeadingDark">#22252C</Color>
+        <Style TargetType="Border" x:Key="CardSoft">
+            <Setter Property="BackgroundColor" Value="#FFFFFF" />
+            <Setter Property="StrokeShape">
+                <Setter.Value>
+                    <RoundRectangle CornerRadius="16" />
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Padding" Value="16" />
+            <Setter Property="Shadow">
+                <Setter.Value>
+                    <!-- 🎯 Bóng sát mép, không lan, cực nhẹ -->
+                    <Shadow Brush="#15000000" Radius="6" Offset="0,2" Opacity="0.12" />
+                </Setter.Value>
+            </Setter>
+            <Setter Property="StrokeThickness" Value="0.8" />
+            <Setter Property="Stroke" Value="#E9E9E9" />
+        </Style>
+
+
+        <Style TargetType="Label" x:Key="TileTitle">
+            <Setter Property="TextColor" Value="#2F3342"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+        </Style>
+        <Style TargetType="Label" x:Key="TileDesc">
+            <Setter Property="TextColor" Value="#9AA3B2"/>
+            <Setter Property="FontSize" Value="12"/>
+        </Style>
+    </ContentPage.Resources>
+    
+    <AbsoluteLayout>
+        <Grid AbsoluteLayout.LayoutBounds="0,0,1,1"
+              AbsoluteLayout.LayoutFlags="All"
+              RowSpacing="0">
+            <!-- khung 3 hàng: header / scroll / tab -->
+            <Grid RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <!-- ========= NỘI DUNG CUỘN sáng màu ========= -->
+                <ScrollView Grid.Row="1">
+                    <StackLayout>
+                        <!-- ========= HEADER đêm (nền sao + trăng) ========= -->
+                        <Grid Grid.Row="0">
+                            <Grid.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                    <GradientStop Color="#3A2C7A" Offset="0"/>
+                                    <GradientStop Color="#2B2A59" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Grid.Background>
+
+                            <Grid  RowDefinitions="Auto,Auto,Auto">
+                                <Image Source="hrheader03.jpg" Aspect="Fill" Opacity="0.5"
+                                       HorizontalOptions="Fill" VerticalOptions="Fill" />
+                                <Label Grid.Row="0" Margin="10,10,0,0" Text="Chào bạn" TextColor="White"
+                                       FontSize="26" FontAttributes="Bold"/>
+
+                                <!-- pill avatar trắng -->
+                                <Grid Margin="10,0,0,0" Grid.Row="0" ColumnDefinitions="Auto,*" ColumnSpacing="12">
+                                    <HorizontalStackLayout Padding="20" Spacing="10"  Margin="0,0,0,10">
+                                        <Grid>
+                                            <!-- Trường hợp KHÔNG có avatar -->
+                                            <Border x:Name="AvatarBorder"
+                                                        WidthRequest="50"
+                                                        HeightRequest="50"
+                                                        StrokeShape="Ellipse"
+                                                        BackgroundColor="#0d47a1"
+                                                        IsVisible="True">
+                                                <Label x:Name="AvatarLabel"
+                                                       VerticalOptions="Center"
+                                                       HorizontalOptions="Center"
+                                                       TextColor="White"
+                                                       FontSize="18"
+                                                       FontAttributes="Bold"/>
+                                            </Border>
+
+                                            <!-- Trường hợp CÓ avatar -->
+                                            <Image x:Name="AvatarImage"
+       WidthRequest="50"
+       HeightRequest="50"
+       Aspect="AspectFill"
+       IsVisible="False">
+                                                <Image.Clip>
+                                                    <EllipseGeometry Center="25,25" RadiusX="25" RadiusY="25" />
+                                                </Image.Clip>
+                                            </Image>
+
+                                        </Grid>
+
+                                        <!-- Thông tin người dùng -->
+                                        <VerticalStackLayout VerticalOptions="Center" Spacing="2" Margin="10,0,0,0">
+                                            <Label x:Name="FullnameLabel"
+                                                   Text="Người dùng"
+                                                   TextColor="White"
+                                                   FontSize="16"
+                                                   FontAttributes="Bold"/>
+                                            <Label x:Name="RoleLabel"
+                                                   Text="Chức vụ / Bộ phận"
+                                                   TextColor="#E9EBF5"
+                                                   FontSize="12"/>
+                                        </VerticalStackLayout>
+                                    </HorizontalStackLayout>
+
+                                    <Label Margin="80,200,0,0" HorizontalOptions="Center" Grid.Row="2" Text="Chúc bạn một ngày làm việc hiệu quả"
+TextColor="#E9EBF5" FontSize="14"/>
+                                </Grid>
+
+                            </Grid>
+                        </Grid>
+                        <VerticalStackLayout Spacing="14" Padding="16,14,16,22">
+                            <!-- Tile CHẤM CÔNG: nền xanh, icon bàn tay trong vòng tròn -->
+                            <!-- Tile CHECK-IN -->
+                            <Border x:Name="CheckinTile"
+                                      
+        StrokeShape="RoundRectangle 12"
+        IsVisible="True">
+                                <Border.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="OnCheckinTapped"/>
+                                </Border.GestureRecognizers>
+                                <Grid Padding="80,30,80,30"
+          BackgroundColor="{StaticResource BrandBlue}"
+          ColumnDefinitions="Auto,*"
+          ColumnSpacing="12"
+          HorizontalOptions="Center">
+                                    <HorizontalStackLayout>
+                                        <Border WidthRequest="54"
+                    HeightRequest="54"
+                    BackgroundColor="#F2F8FF"
+                    StrokeShape="Ellipse"
+                    Padding="8"
+                    Shadow="{x:Null}">
+                                            <Label Text="👆"  FontSize="20"
+                                             HorizontalOptions="Center"
+                                             VerticalOptions="Center"></Label>
+                                        </Border>
+                                        <VerticalStackLayout Margin="10,0,0,0" VerticalOptions="Center" Spacing="2">
+                                            <Label Text="Chấm công"
+                       TextColor="White"
+                       FontSize="18"
+                       FontAttributes="Bold"/>
+                                            <Label Text="để bắt đầu công việc ngay"
+                       TextColor="#EAF3FF"
+                       FontSize="14"/>
+                                        </VerticalStackLayout>
+                                    </HorizontalStackLayout>
+                                </Grid>
+                            </Border>
+
+                            <!-- Tile CHECK-OUT (ẩn ban đầu) -->
+                            <Border x:Name="CheckoutTile"
+        StrokeShape="RoundRectangle 12"
+        IsVisible="False">
+                                <Border.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="OnCheckoutTapped"/>
+                                </Border.GestureRecognizers>
+                                <Grid Padding="80,30,80,30"
+          BackgroundColor="#FFA726"  
+                                    ColumnDefinitions="Auto,*"
+          ColumnSpacing="12"
+          HorizontalOptions="Center">
+                                    <HorizontalStackLayout>
+                                        <Border WidthRequest="44"
+                    HeightRequest="44"
+                    BackgroundColor="#FFF3E0"
+                    StrokeShape="Ellipse"
+                    Padding="8"
+                    Shadow="{x:Null}">
+                                            <Label Text="&#xf2f5;" 
+                                                FontFamily="FontAwesome"
+                       FontSize="20"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       TextColor="Black"/>
+                                        </Border>
+                                        <VerticalStackLayout Margin="10,0,0,0" VerticalOptions="Center" Spacing="2">
+                                            <Label Text="Check-out"
+                       TextColor="White"
+                       FontSize="18"
+                       FontAttributes="Bold"/>
+                                            <Label Text="để hoàn thành công việc"
+                       TextColor="#FFF3E0"
+                       FontSize="14"/>
+                                        </VerticalStackLayout>
+                                    </HorizontalStackLayout>
+                                </Grid>
+                            </Border>
+
+
+                            <!-- Lưới 4 thẻ chức năng trắng + bóng mềm -->
+                            <Grid ColumnSpacing="14" RowSpacing="14">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <!-- Lịch làm việc -->
+                                <Border Grid.Row="0" Grid.Column="0" Style="{StaticResource CardSoft}">
+                                    <Border.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnScheduleTapped"/>
+                                    </Border.GestureRecognizers>
+                                    <VerticalStackLayout Spacing="6">
+                                        <Label FontSize="30" Text="🗓️"></Label>
+                                        <Label Text="Lịch làm việc" Style="{StaticResource TileTitle}"/>
+                                        <Label Text="Đổi ca / Nhờ làm thay" Style="{StaticResource TileDesc}"/>
+                                    </VerticalStackLayout>
+                                </Border>
+
+
+                                <!-- Đăng ký nghỉ -->
+                                <Border Grid.Row="0" Grid.Column="1" Style="{StaticResource CardSoft}">
+                                    <Border.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnLeaveTapped"/>
+                                    </Border.GestureRecognizers>
+                                    <VerticalStackLayout Spacing="6">
+                                        <Label FontSize="30" Text="⛱️"></Label>
+                                        <Label Text="Đăng ký nghỉ" Style="{StaticResource TileTitle}"/>
+                                        <Label Text="Nghỉ phép / Nghỉ ca" Style="{StaticResource TileDesc}"/>
+                                    </VerticalStackLayout>
+                                </Border>
+
+
+                                <!-- Kỳ lương -->
+                                <Border Grid.Row="1" Grid.Column="0" Style="{StaticResource CardSoft}">
+                                    <Border.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnSalaryClicked"/>
+                                    </Border.GestureRecognizers>
+                                    <VerticalStackLayout Spacing="6">
+                                        <Label FontSize="30" Text="💸"></Label>
+                                        <HorizontalStackLayout>
+                                            <Label Text="Kỳ lương" Style="{StaticResource TileTitle}"/>
+                                            <Label Margin="4,0,0,0" Text="(01/09 - 30/09)" 
+                   x:Name="SalaryPeriodLabel"
+                   Style="{StaticResource TileDesc}"/>
+                                        </HorizontalStackLayout>
+                                        <Label x:Name="SalaryAmountLabel"
+               Text="1.500.000 đ"
+               TextColor="{StaticResource BrandBlue}"
+               FontSize="14"
+               FontAttributes="Bold"/>
+                                    </VerticalStackLayout>
+                                </Border>
+
+
+                                <!-- Bảng tin -->
+                                <Border Grid.Row="1" Grid.Column="1" Style="{StaticResource CardSoft}">
+                                    <Border.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnNewsClicked"/>
+                                    </Border.GestureRecognizers>
+                                    <VerticalStackLayout Spacing="6">
+                                        <Label FontSize="30" Text="📃"></Label>
+                                        <Label Text="Tạo báo cáo" Style="{StaticResource TileTitle}"/>
+                                        <Label Text="Tạo báo cáo lương" Style="{StaticResource TileDesc}"/>
+                                    </VerticalStackLayout>
+                                </Border>
+                            </Grid>
+
+                            <!-- Nhiệm vụ cần làm -->
+                            <!--<VerticalStackLayout Spacing="8" Margin="2,4,2,0">
+                                <HorizontalStackLayout>
+                                    <Label Text="Nhiệm vụ cần làm" TextColor="{StaticResource HeadingDark}"
+      FontSize="18" FontAttributes="Bold" VerticalOptions="Center"/>
+                                    <Button Margin="130,0,0,0" Text="Xem lịch sử" BackgroundColor="Transparent"
+       TextColor="{StaticResource BrandBlue}" HorizontalOptions="End" />
+
+                                </HorizontalStackLayout>
+
+                                <Label Text="Vuốt sang màn chấm công để hoàn thành công việc"
+                 TextColor="#8E96A6" FontSize="14"/>
+                            </VerticalStackLayout>-->
+
+                        </VerticalStackLayout>
+                    </StackLayout>
+
+                </ScrollView>
+              
+
+
+
+     
+            </Grid>
+        </Grid>
+        <!-- ===================== DIALOG CHECK-IN ===================== -->
+        <Grid x:Name="DialogOverlay"
+         IsVisible="False"
+         BackgroundColor="#80000000"
+         AbsoluteLayout.LayoutBounds="0,0,1,1"
+         AbsoluteLayout.LayoutFlags="All"
+         RowDefinitions="*,Auto,*"
+         ColumnDefinitions="*,Auto,*"
+         ZIndex="10">
+
+            <Border Grid.Row="1" Grid.Column="1"
+               BackgroundColor="White"
+               Padding="20"
+               StrokeShape="RoundRectangle 16"
+               WidthRequest="320">
+
+                <VerticalStackLayout Spacing="14">
+                    <Label Text="📝 Check-in ca làm việc"
+                      FontSize="18"
+                      FontAttributes="Bold"
+                      TextColor="#22252C"
+                      HorizontalOptions="Center" />
+
+                    <!-- Picker chọn ca -->
+                    <!--<Picker x:Name="ShiftPicker"
+                       Title="Chọn ca làm việc"
+                       HorizontalOptions="FillAndExpand"/>-->
+
+                    <!-- Thông tin kết nối WiFi -->
+                    <Frame BackgroundColor="#F5F6FA" Padding="10" HasShadow="False" BorderColor="#E0E0E0">
+                        <VerticalStackLayout Spacing="4">
+                            <Label x:Name="WifiNameLabel"
+                              Text="Tên WiFi: ..."/>
+                            <Label x:Name="WifiBssidLabel"
+                              Text="Mã BSSID: ..."/>
+                        </VerticalStackLayout>
+                    </Frame>
+
+                    <HorizontalStackLayout HorizontalOptions="Center" Spacing="12">
+                        <Button Text="Quay lại"
+                           Clicked="OnCancelDialog"
+                           BackgroundColor="#E0E0E0"
+                           TextColor="Black"
+                           WidthRequest="120" />
+                        <Button Text="Đồng ý"
+                           Clicked="OnConfirmDialog"
+                           BackgroundColor="{StaticResource BrandBlue}"
+                           TextColor="White"
+                           WidthRequest="120" />
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Border>
+        </Grid>
+
+    </AbsoluteLayout>
+
+</ContentPage>

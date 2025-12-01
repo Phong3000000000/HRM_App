@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HRMApp.View.SalarySummaryPage"
+             Title="Hiệu quả làm việc"
+             BackgroundColor="#F5F6FA">
+    <Grid>
+        <ScrollView>
+            <VerticalStackLayout Padding="16" Spacing="0">
+                <Grid ColumnDefinitions="Auto,*,Auto" Padding="0,0,0,0">
+                    <ImageButton Source="chevron_left.png"
+                                 Clicked="OnPrevMonthClicked"
+                                 BackgroundColor="Transparent" />
+                    <Label Grid.Column="1" Text="{Binding CurrentPeriod}" 
+                           HorizontalOptions="Center" 
+                           VerticalOptions="Center"
+                           FontSize="15"
+                           FontAttributes="Bold"/>
+                    <ImageButton Grid.Column="2" Source="chevron_right.png"
+                                 Clicked="OnNextMonthClicked"
+                                 BackgroundColor="Transparent" />
+                </Grid>
+
+
+                <Frame BackgroundColor="White" Padding="14" CornerRadius="12" Margin="0,10,0,0">
+                    <VerticalStackLayout Spacing="6">
+                        <Grid ColumnDefinitions="*,Auto">
+                            <Label Text="Số công làm việc được phân công" />
+                            <Label Text="{Binding AssignedDays}" 
+                                   FontSize="14"
+                                   HorizontalTextAlignment="End"
+                                   Grid.Column="1"/>
+                        </Grid>
+                        <Grid ColumnDefinitions="*,Auto">
+                            <Label Text="Số công làm việc thực tế" />
+                            <Label Text="{Binding ActualDays}" 
+                                   FontSize="14"
+                                   HorizontalTextAlignment="End"
+                                   Grid.Column="1"/>
+                        </Grid>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="White" Padding="14" CornerRadius="12" Margin="0,10">
+                    <VerticalStackLayout Spacing="6">
+                        <Grid ColumnDefinitions="*,Auto">
+                            <Label Text="Số lần đi muộn" />
+                            <Label Text="{Binding LateCount}" 
+                                   FontSize="14"
+                                   HorizontalTextAlignment="End"
+                                   Grid.Column="1"/>
+                        </Grid>
+                        <Grid ColumnDefinitions="*,Auto">
+                            <Label Text="Số lần về sớm" />
+                            <Label Text="{Binding EarlyLeaveCount}" 
+                               FontSize="14"
+                               HorizontalTextAlignment="End"
+                               Grid.Column="1"/>
+                        </Grid>
+
+                        <Grid ColumnDefinitions="*,Auto">
+                            <Label Text="Số lần vắng (nghỉ)" />
+                            <Label Text="{Binding LeaveCount}" 
+                                   FontSize="14"
+                                   HorizontalTextAlignment="End"
+                                   Grid.Column="1"/>
+                        </Grid>
+                    </VerticalStackLayout>
+                </Frame>
+
+
+                <Frame BackgroundColor="White" Padding="14" CornerRadius="12" Margin="0,0,0,10">
+                    <VerticalStackLayout Spacing="6">
+
+                        <Grid ColumnDefinitions="*,Auto">
+                            <Label Text="Tổng lương gộp" FontAttributes="Bold"/>
+                            <Label Text="{Binding TotalSalary, StringFormat='{0:N0} đ'}" 
+                                   FontSize="14"
+                                   HorizontalTextAlignment="End"
+                                   Grid.Column="1"/>
+                        </Grid>
+
+                        <BoxView HeightRequest="1" Color="#EEEEEE" Margin="0,5"/>
+                        <Label Text="Chi tiết tính lương công:" FontAttributes="Italic" FontSize="13" TextColor="#666"/>
+                        <Grid ColumnDefinitions="*,Auto">
+                            <Label Text="Lương 1 ngày công"/>
+                            <Label Text="{Binding LuongMotNgayCong, StringFormat='{0:N0} đ'}" 
+                                   FontSize="14" HorizontalTextAlignment="End" Grid.Column="1"/>
+                        </Grid>
+                        <Grid ColumnDefinitions="*,Auto">
+                            <Label Text="Lương 1 giờ"/>
+                            <Label Text="{Binding LuongMotGio, StringFormat='{0:N0} đ'}" 
+                                   FontSize="14" HorizontalTextAlignment="End" Grid.Column="1"/>
+                        </Grid>
+
+                        <BoxView HeightRequest="1" Color="#EEEEEE" Margin="0,5"/>
+                        <Grid ColumnDefinitions="*,Auto">
+                            <Label Text="Tổng tiền thưởng"/>
+                            <Label Text="{Binding Reward, StringFormat='{0:N0} đ'}" 
+                                   FontSize="14" HorizontalTextAlignment="End" Grid.Column="1"/>
+                        </Grid>
+                        <Grid ColumnDefinitions="*,Auto">
+                            <Label Text="Tổng tiền phạt"/>
+                            <Label Text="{Binding FineOther, StringFormat='{0:N0} đ'}" 
+                                   TextColor="Red" HorizontalTextAlignment="End" Grid.Column="1"/>
+                        </Grid>
+                        <Grid ColumnDefinitions="*,Auto">
+                            <Label Text="Tổng tiền phụ cấp"/>
+                            <Label Text="{Binding Allowance, StringFormat='{0:N0} đ'}" 
+                                   FontSize="14" HorizontalTextAlignment="End" Grid.Column="1"/>
+                        </Grid>
+
+                        <BoxView HeightRequest="1" Color="#EEEEEE" Margin="0,5"/>
+                        <Label Text="Chi tiết Tăng ca (OT):" FontAttributes="Italic" FontSize="13" TextColor="#666"/>
+                        <Grid ColumnDefinitions="*,Auto">
+                            <Label Text="Tổng giờ OT"/>
+                            <Label Text="{Binding SoGioOT, StringFormat='{0} giờ'}" 
+                                   FontSize="14" HorizontalTextAlignment="End" Grid.Column="1"/>
+                        </Grid>
+                        <Grid ColumnDefinitions="*,Auto">
+                            <Label Text="Hệ số OT"/>
+                            <Label Text="{Binding HeSoOT, StringFormat='x{0}'}" 
+                                   FontSize="14" HorizontalTextAlignment="End" Grid.Column="1"/>
+                        </Grid>
+                        <Grid ColumnDefinitions="*,Auto">
+                            <Label Text="Số giờ OT thực tế" />
+                            <Label Text="{Binding SoGioOTThucTe}" 
+           FontSize="14"
+           HorizontalTextAlignment="End"
+           Grid.Column="1"/>
+                        </Grid>
+
+                        <Grid ColumnDefinitions="*,Auto">
+                            <Label Text="Tổng tiền OT"/>
+                            <Label Text="{Binding OvertimeSalary, StringFormat='{0:N0} đ'}" 
+                                   FontSize="14" HorizontalTextAlignment="End" Grid.Column="1"/>
+                        </Grid>
+
+
+                        <BoxView HeightRequest="1" Color="#EEEEEE" Margin="0,5"/>
+                        <Label Text="Tỷ lệ Bảo hiểm (NLĐ):" FontAttributes="Italic" FontSize="13" TextColor="#666"/>
+                        <Grid ColumnDefinitions="*,Auto">
+                            <Label Text="Lương đóng Bảo hiểm"/>
+                            <Label Text="{Binding InsuranceSalaryAmount, StringFormat='{0:N0} đ'}" 
+                           FontAttributes="Bold"
+                           FontSize="14" HorizontalTextAlignment="End" Grid.Column="1"/>
+                        </Grid>     
+                        <Grid ColumnDefinitions="*,Auto">
+                            <Label Text="BHXH"/>
+                            <Label Text="{Binding BhxhRate}" 
+                                   FontSize="14" HorizontalTextAlignment="End" Grid.Column="1"/>
+                        </Grid>
+                        <Grid ColumnDefinitions="*,Auto">
+                            <Label Text="BHYT"/>
+                            <Label Text="{Binding BhytRate}" 
+                                   FontSize="14" HorizontalTextAlignment="End" Grid.Column="1"/>
+                        </Grid>
+                        <Grid ColumnDefinitions="*,Auto">
+                            <Label Text="BHTN"/>
+                            <Label Text="{Binding BhtnRate}" 
+                                   FontSize="14" HorizontalTextAlignment="End" Grid.Column="1"/>
+                        </Grid>
+
+                        <Grid ColumnDefinitions="*,Auto">
+                            <Label Text="Tổng tiền bảo hiểm"/>
+                            <Label Text="{Binding Insurance, StringFormat='{0:N0} đ'}" 
+                                   FontSize="14" HorizontalTextAlignment="End" Grid.Column="1"/>
+                        </Grid>
+                        <BoxView HeightRequest="1" Color="#000" Margin="0,5"/>
+
+
+                        <Grid ColumnDefinitions="*,Auto">
+                            <Label Text="Tổng lương thực nhận" FontAttributes="Bold"/>
+                            <Label Text="{Binding NetSalary, StringFormat='{0:N0} đ'}" 
+                                   FontSize="15" 
+                                   FontAttributes="Bold" 
+                                   TextColor="#1568b2"
+                                   HorizontalTextAlignment="End"
+                                   Grid.Column="1"/>
+                        </Grid>
+
+                        <Grid ColumnDefinitions="*,Auto">
+                            <Label Text="Tổng tiền lương đã ứng"/>
+                            <Label Text="{Binding AdvanceSalary, StringFormat='{0:N0} đ'}" 
+                                   FontSize="14" HorizontalTextAlignment="End" Grid.Column="1"/>
+                        </Grid>
+
+                        <Grid ColumnDefinitions="*,Auto">
+                            <Label Text="Tổng lương còn lại sau khi ứng" FontAttributes="Bold"/>
+                            <Label Text="{Binding FinalSalary, StringFormat='{0:N0} đ'}" 
+                                   FontSize="15" 
+                                   FontAttributes="Bold" 
+                                   TextColor="#1568b2"
+                                   HorizontalTextAlignment="End"
+                                   Grid.Column="1"/>
+                        </Grid>
+
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Grid ColumnDefinitions="*,*" ColumnSpacing="12">
+                    <Button Text="Chọn tháng"
+                            Clicked="OnPickMonthClicked"
+                            BackgroundColor="#FFCA28"
+                            TextColor="Black"
+                            Grid.Column="0"/>
+
+                    <Button Text="Xem chi tiết"
+                            Clicked="OnDetailClicked"
+                            BackgroundColor="#1568b2"
+                            TextColor="White"
+                            Grid.Column="1"/>
+                </Grid>
+            </VerticalStackLayout>
+        </ScrollView>
+        <DatePicker x:Name="MonthPicker"
+                    Format="MM/yyyy"
+                    Opacity="0.01"
+                    HeightRequest="1"
+                    WidthRequest="1"
+                    DateSelected="OnMonthChanged"
+                    HorizontalOptions="Center"
+                    VerticalOptions="End" />
+    </Grid>
+</ContentPage>

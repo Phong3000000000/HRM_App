@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HRMApp.View.ReportSelectionPage"
+             Title="Tạo Báo Cáo"
+             BackgroundColor="#F5F6FA">
+
+    <ContentPage.Resources>
+        <Style TargetType="Border" x:Key="ReportItemStyle">
+            <Setter Property="Padding" Value="15"/>
+            <Setter Property="StrokeShape" Value="RoundRectangle 10"/>
+            <Setter Property="BackgroundColor" Value="White"/>
+            <Setter Property="Margin" Value="0,5"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <Grid RowDefinitions="Auto,*">
+        <Label Grid.Row="0" Text="Chọn loại báo cáo" 
+               FontSize="18" FontAttributes="Bold" Margin="20,20,20,10" TextColor="#333"/>
+
+        <ScrollView Grid.Row="1" Padding="20">
+            <VerticalStackLayout Spacing="15">
+
+                <Border Style="{StaticResource ReportItemStyle}">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Báo cáo Phiếu Lương" FontAttributes="Bold" FontSize="16" TextColor="#1568b2"/>
+                        <Label Text="Tải phiếu lương chi tiết theo tháng." FontSize="13" TextColor="Gray"/>
+
+                        <Label Text="Chọn kỳ lương:" FontSize="12" TextColor="#555" Margin="0,5,0,0"/>
+                        <Picker x:Name="SalaryPicker" 
+                                Title="-- Chọn tháng --"
+                                ItemDisplayBinding="{Binding Period}"
+                                SelectedIndexChanged="OnSalarySelected"/>
+
+                        <Button x:Name="BtnDownloadPayslip"
+                                Text="Tải xuống PDF"
+                                BackgroundColor="#1568b2"
+                                TextColor="White"
+                                HeightRequest="40"
+                                CornerRadius="20"
+                                Clicked="OnDownloadPayslipClicked"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Style="{StaticResource ReportItemStyle}">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Hồ sơ Nhân viên" FontAttributes="Bold" FontSize="16" TextColor="#1568b2"/>
+                        <Label Text="Xuất hồ sơ cá nhân dạng PDF." FontSize="13" TextColor="Gray"/>
+                        <Button Text="Tải hồ sơ"
+                                BackgroundColor="White"
+                                BorderColor="#1568b2"
+                                BorderWidth="1"
+                                TextColor="#1568b2"
+                                HeightRequest="40"
+                                CornerRadius="20"
+                                Clicked="OnDownloadProfileClicked"/>
+                    </VerticalStackLayout>
+                </Border>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <Grid x:Name="LoadingOverlay" IsVisible="False" BackgroundColor="#80000000" Grid.RowSpan="2">
+            <ActivityIndicator IsRunning="True" Color="White" VerticalOptions="Center" HorizontalOptions="Center"/>
+        </Grid>
+    </Grid>
+</ContentPage>
